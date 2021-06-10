@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.ver-mas div {
+  margin-left: 5.6%;
+  margin-right: 5.6%;
+}
+
+.ver-mas div .gifs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (156px)[2];
+      grid-template-columns: repeat(2, 156px);
+  place-content: center;
+  gap: 25px;
+}
+
+.ver-mas div .gifs .gifoCon img {
+  width: 156px;
+  height: 120px;
+}
+
+.ver-mas .botton {
+  margin: auto;
+  width: 127px;
+  height: 50px;
+  text-align: center;
+  border: solid #572EE5 1px;
+  border-radius: 50px;
+  margin-top: 78px;
+  margin-bottom: 78px;
+}
+
+.ver-mas .botton a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #572EE5;
+  letter-spacing: 0;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ver-mas .botton:hover {
+  background-color: #572EE5;
+}
+
+.ver-mas .botton:hover a {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 780px) {
+  .ver-mas div {
+    margin-left: 10.8%;
+    margin-right: 10.8%;
+  }
+  .ver-mas div .gifs {
+    -ms-grid-columns: (260px)[4];
+        grid-template-columns: repeat(4, 260px);
+    gap: 33px;
+  }
+  .ver-mas div .gifs .gifoCon {
+    position: relative;
+  }
+  .ver-mas div .gifs .gifoCon img {
+    width: 260px;
+    height: 200px;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 260px;
+    height: 200px;
+    background-color: rgba(87, 46, 229, 0.6);
+    padding: 0;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones {
+    max-width: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .corazon {
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icon-fav-activado.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .corazon:hover {
+    background-image: url(../images//icon-fav-activado-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .corazon:visited {
+    background-image: url(../images/icon-fav-active.svg);
+    background-repeat: no-repeat;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .descargar {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../images/icon-download.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .descargar:hover {
+    background-image: url(../images/icon-download-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .ampliar {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../images//icon-max-normal.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .ver-mas div .gifs .gifoCon .bgGifo .acciones .ampliar:hover {
+    background-image: url(../images/icon-max-hover.svg);
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=ver-mas.css.map */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo-desktop.svg" />
+    <link rel="stylesheet" href="./assets/style/style-crea-gifos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>GIFOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu " id="menu">
+            <a href="./index.html">
+                <div class="logo"></div>
+            </a>
+            <button class="burger" id="burger">
+                <div></div>
+            </button>
+            <!-- <div class="burger" id="burger"></div> -->
+
+            <ul class="menu-ul" id="menu-ul">
+                <li id="nightMode"><a href="./modo-nocturno.html">Modo Nocturno</a></li>
+                <div></div>
+                <li id="favorite"><a href="./favoritos.html">Favoritos</a></li>
+                <div></div>
+                <li id="myGifos"><a href="./mis-gifos.html">Mis GIFOS</a></li>
+                <li id="createGifo">
+                    <a href="./crea-gifo.html">
+                        <div class="crear-gifo"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="crear-gifo">
+
+            <div class="camera">
+                <img src="./assets/images/camara.svg" alt="camara" class="camera-img">
+                <img src="./assets/images/Path 2.svg" alt="luz-camara" class="luz-camara-img">
+            </div>
+            <div class="conteiner">
+                <div class="cuadrado" id="cuadrado">
+                    <div class="esquinas-sup">
+                        <div class="esq-izq-sup esquina"></div>
+                        <div class="esq-der-sup esquina"></div>
+                    </div>
+                    <div class="centro">
+                        <h1 class="title" id="title"></h1>
+                        <p class="paragraph" id="paragraph"></p>
+                        <video src="#" class="video hidden" id="video"></video>
+                    </div>
+                    <div class="esquinas-inf">
+                        <div class="esq-izq-inf esquina"></div>
+                        <div class="esq-der-inf esquina"></div>
+                    </div>
+                </div>
+
+                <div class="operadores-crear-gifo">
+                    <div class="pasos">
+                        <div class="paso" id="paso1">
+                            <h5 class="h5" id="paso1H5">1</h5>
+                        </div>
+                        <div class="paso" id="paso2">
+                            <h5 class="h5" id="paso2H5">2</h5>
+                        </div>
+                        <div class="paso" id="paso3">
+                            <h5 class="h5" id="paso3H5">3</h5>
+                        </div>
+                    </div>
+                </div>
+                <button id="btnComenzarGifo" class="btn-comenzar"></button>
+            </div>
+            <div class="operador-img"></div>
+
+        </section>
+        <footer>
+            <div class="footer-redes-sociales">
+                <h4>Compartir en:</h4>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="facebook"></div>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <div class="twitter"></div>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+            </div>
+            <h4>&#169; GIFOS 2020 All rights Reserved.</h4>
+        </footer>
+    </main>
+
+    <!-- RecordRTC -->
+    <!--   <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+ -->
+    <!-- opcional para compatibilidad crossbrowser -->
+    <!--   <script src="https://cdn.webrtc-experiment.com/gumadapter.js"></script>
+ -->
+    <script src="./assets/script/crear-gifo.js"></script>
+</body>
+
+</html>

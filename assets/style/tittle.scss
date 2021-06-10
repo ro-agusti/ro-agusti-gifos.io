@@ -1,0 +1,40 @@
+@import "_variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style: none;
+}
+.tittle {
+  margin-top: 7px;
+  margin-bottom: 31px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ .tittle-index {
+    margin: auto;
+    width: 286px;
+    font-family: $primary-font-family;
+    font-size: 25px;
+    color: $primary-color;
+    text-align: center;
+    line-height: 33px;
+    font-weight: bold;
+    span {
+      color: $secondary-color;
+    }
+  }
+}
+@media screen and (min-width: 780px) {
+  .tittle {
+    margin-top: 76px;
+    height: 100px;
+    
+    .tittle-index{
+      font-size: 35px;
+      width: 33%;
+      //margin: auto;
+    }
+  }
+}

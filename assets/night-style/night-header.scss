@@ -1,0 +1,152 @@
+@import "../style/_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style: none;
+}
+body {
+    background-color: $bg-night-mode;
+  padding-top: 95px;
+}
+.header {
+  border-top: $color-negro solid 5px;
+  background-color: $bg-night-mode;
+  //height: 95px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  .menu {
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10.8%;
+    padding-right: 10.8%;
+    .logo {
+      background-image: url(../images/Logo-modo-noc.svg);
+      background-repeat: no-repeat;
+      width: 68px;
+      height: 60px;
+      cursor: pointer;
+    }
+    .burger {
+      display: none;
+      border: none;
+      background-color: $bg-night-mode;
+      div {
+        width: 14px;
+        height: 14px;
+        background-image: url(../images/burger-modo-noct.svg);
+        &:active {
+          background-image: url(../images/close-modo-noct.svg);
+        }
+      }
+    }
+    .menu-ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        margin: 0px 20px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          font-family: $montserrat-bold;
+          font-size: 13px;
+          font-weight: bold;
+          color: $bg-blanco;
+          display: block;
+          text-transform: uppercase;
+          &:hover {
+            text-decoration: underline 2px;
+            text-decoration-color: $secondary-color;
+            transition: 0.4s;
+          }
+          &:active {
+            color: $color-light-grey;
+            transition: 0.4s;
+          }
+        }
+        .crear-gifo {
+          width: 54px;
+          height: 54px;
+          background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
+          &:hover {
+            background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
+          }
+          &:active {
+            background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    .menu {
+      padding-left: 22px;
+      padding-right: 26px;
+      .logo {
+        background-image: url(../images/logo-mobile-modo-noct.svg);
+        width: 48.8px;
+        height: 48.8px;
+      }
+      .burger {
+        display: block;
+      }
+      /* .burger_active {
+        border: none;
+        width: 14px;
+        height: 14px;
+        background-image: url(./assets/images/close.svg); 
+      }*/
+      .menu-ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: $color-negro;
+        height: calc(100% - 95px);
+        width: 100%;
+        position: fixed;
+        left: 100%;
+        transition: left 0.3s;
+        top: 95px;
+        overflow-y: auto;
+        padding-top: 32px;
+        li {
+          line-height: 30px;
+          a {
+            text-decoration: none;
+            font-family: $montserrat-bold;
+            font-size: 15px;
+            color: $bg-blanco;
+            line-height: 60px;
+            text-transform: none;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+          .crear-gifo {
+            display: none;
+          }
+        }
+        div {
+          width: 41px;
+
+          height: 1px;
+          background-color: $bg-blanco;
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+      .menu-ul_visible {
+        left: 0;
+      }
+    }
+  }
+}

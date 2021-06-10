@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  list-style: none;
+}
+
+.trending-gifos {
+  background-color: #F3F5F8;
+  width: 100%;
+}
+
+.trending-gifos .tittle-trending-gifo {
+  padding-top: 46px;
+  padding-bottom: 37px;
+}
+
+.trending-gifos .tittle-trending-gifo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.trending-gifos .tittle-trending-gifo p {
+  margin-top: 7px;
+  width: 88.8%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 23px;
+}
+
+.trending-gifos .carroussel .left-arrow {
+  display: none;
+}
+
+.trending-gifos .carroussel .img-carroussel-conteiner {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+}
+
+.trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel {
+  padding: 0;
+  width: 243px;
+  height: 187px;
+}
+
+.trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel img {
+  width: 100%;
+  height: 100%;
+}
+
+.trending-gifos .carroussel .right-arrow {
+  display: none;
+}
+
+@media screen and (min-width: 780px) {
+  /* .hover{
+    transform: scale(1.2);
+    transform-origin: center;
+  } */
+  .trending-gifos {
+    width: 90%;
+    padding: 67px 94px 185px 94px;
+  }
+  .trending-gifos .tittle-trending-gifo {
+    /*  padding-top: 67px;
+      padding-bottom: 53px; */
+  }
+  .trending-gifos .tittle-trending-gifo h2 {
+    font-size: 25px;
+  }
+  .trending-gifos .tittle-trending-gifo p {
+    font-size: 18px;
+  }
+  .trending-gifos .carroussel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    height: 275px;
+  }
+  .trending-gifos .carroussel .left-arrow {
+    display: block;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/button-slider-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .trending-gifos .carroussel .left-arrow:hover {
+    background-image: url(../images/button-slider-left-hover.svg);
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner {
+    width: 1121px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 357px;
+    height: 275px;
+    position: relative;
+    /* &:hover{
+          } */
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel img {
+    width: 357px;
+    height: 275px;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel {
+    position: absolute;
+    top: 0;
+    width: 357px;
+    height: 275px;
+    background-color: rgba(87, 46, 229, 0.6);
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones {
+    max-width: 357px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .corazon {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icon-fav.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .corazon:hover {
+    background-image: url(../images/icon-fav-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .corazon:visited {
+    background-image: url(../images/icon-fav-active.svg);
+    background-repeat: no-repeat;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .descargar {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../images/icon-download.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .descargar:hover {
+    background-image: url(../images/icon-download-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .ampliar {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../images//icon-max-normal.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel .bg-img-carroussel .acciones .ampliar:hover {
+    background-image: url(../images/icon-max-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .trending-gifos .carroussel .img-carroussel-conteiner:nth-child(2) {
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+  .trending-gifos .carroussel .right-arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-image: url(../images/Button-Slider-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .trending-gifos .carroussel .right-arrow:hover {
+    background-image: url(../images/Button-Slider-right-hover.svg);
+  }
+}
+/*# sourceMappingURL=trending-gifos.css.map */

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 100 100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#896CED;stroke-width:2.36;stroke-miterlimit:22.9256}
+    .fil2 {fill:#896CED}
+    .fil1 {fill:#572EE5;fill-opacity:0.701961}
+    .fil0 {fill:white;fill-rule:nonzero;fill-opacity:0.701961}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2215247829200">
+   <g>
+    <g id="GIFOS">
+     <g id="_00-UI-Kit">
+      <g id="icon-fav">
+       <path class="fil0" d="M18.75 0l62.5 0c10.35,0 18.75,8.4 18.75,18.75l0 62.5c0,10.35 -8.4,18.75 -18.75,18.75l-62.5 0c-10.35,0 -18.75,-8.4 -18.75,-18.75l0 -62.5c0,-10.35 8.4,-18.75 18.75,-18.75z"/>
+       <g>
+        <path class="fil1" d="M50.87 29.68c2.99,-3 7.05,-4.68 11.29,-4.68 4.23,0 8.29,1.68 11.29,4.68 2.99,2.99 4.67,7.05 4.67,11.29 0,4.23 -1.68,8.3 -4.67,11.29l-21.71 21.71c-0.96,0.96 -2.52,0.96 -3.48,0l-21.71 -21.71c-6.23,-6.24 -6.23,-16.35 0,-22.58 6.24,-6.24 16.35,-6.24 22.58,0l0.87 0.86 0.87 -0.86zm-0.87 39.08l17.37 -17.37 2.6 -2.6c2.08,-2.08 3.24,-4.89 3.24,-7.82 0,-2.93 -1.16,-5.75 -3.24,-7.82 -2.07,-2.07 -4.88,-3.24 -7.81,-3.24 -2.94,0 -5.75,1.17 -7.82,3.24l-2.6 2.6c-0.96,0.96 -2.52,0.96 -3.48,0l-2.6 -2.6c-4.32,-4.32 -11.32,-4.32 -15.63,0 -4.32,4.32 -4.32,11.32 0,15.64l19.97 19.97z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <polygon class="fil2 str0" points="63.24,58.35 50,68.76 27.89,47.12 24.76,39.02 28.57,31.59 37.85,28.47 47.52,32.47 50.45,35.01 56.41,29.54 65.58,28.47 71.93,32.86 74.67,40.77 70.86,50.05 "/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  list-style: none;
+}
+
+.icono-gifos {
+  width: 28px;
+  margin: auto;
+}
+
+.tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 47px;
+}
+
+.tittle h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.empty-favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.empty-favorite .empty-favorite_img {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/icon-fav-sin-contenido.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.empty-favorite .empty-mis-gifos_img {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/icon-mis-gifos-sin-contenido.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.empty-favorite .empty-favorite_title {
+  margin-top: 23.7px;
+  margin-bottom: 137px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #50E3C2;
+  text-align: center;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 780px) {
+  .tittle {
+    margin-top: 76px;
+    height: 100px;
+  }
+  .tittle h1 {
+    font-size: 35px;
+    width: 33%;
+    margin: auto;
+  }
+  .tittle .corazon-favoritos {
+    margin-top: 11px;
+  }
+  .empty-favorite .empty-favorite_img {
+    margin-top: 62.3px;
+    width: 150px;
+    height: 150px;
+  }
+  .empty-favorite .empty-mis-gifos_img {
+    margin-top: 62.3px;
+    width: 150px;
+    height: 150px;
+  }
+  .empty-favorite .empty-favorite_title {
+    width: 431px;
+  }
+}
+/*# sourceMappingURL=tittle-favoritos.css.map */

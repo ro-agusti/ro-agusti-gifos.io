@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo-desktop.svg" />
+    <link rel="stylesheet" href="./assets/style/style-favoritos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>GIFOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu " id="menu">
+            <a href="./index.html">
+                <div class="logo"></div>
+            </a>
+            <button class="burger" id="burger">
+                <div></div>
+            </button>
+            <!-- <div class="burger" id="burger"></div> -->
+
+            <ul class="menu-ul" id="menu-ul">
+                <li id="nightMode"><a href="./modo-nocturno.html">Modo Nocturno</a></li>
+                <div></div>
+                <li id="favorite"><a href="./favoritos.html">Favoritos</a></li>
+                <div></div>
+                <li id="myGifos"><a href="./mis-gifos.html">Mis GIFOS</a></li>
+                <li id="createGifo">
+                    <a href="./crea-gifo.html"><div class="crear-gifo"></div></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tittle">
+            <img src="./assets/images/icon-favoritos.svg" alt="corazon-favoritos" class="icono-gifos">
+            <h1 class="favoritos">Favoritos</h1>
+        </section>
+        <section class="hidden empty-favorite" id="emptyFavorite">
+            <div class="empty-favorite_img"></div>
+            <h2 class="empty-favorite_title">"¡Guarda tu primer GIFO en Favoritos para que se muestre aqui!"</h2>
+        </section>  
+        <section class="ver-mas">
+            <div>
+                <div class="gifs" id="gifsConteiner">
+                    <!-- <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120">
+                    <img src="./imagenes-de-prueba/156x120.svg" alt="156x120"> -->
+                </div>
+            </div>
+            <div class="botton" id="btn-verMas-favoritos">
+                <a href="gif-max">VER MAS</a>
+            </div>
+        </section>
+        <section class="trending-gifos">
+            <div class="tittle-trending-gifo">
+                <h2>Trending GIFOS</h2>
+                <p>Mira los ultimos GIFOS de nuestra comunidad.</p>
+
+            </div>
+            <div class="carroussel">
+                <div class="left-arrow" id="left-arrow"></div>
+                <div class="img-carroussel-conteiner" id="carrousselConteiner">
+                    <!-- <div class="img-carroussel">
+                        <img src="./imagenes-de-prueba/gatito-gifo.jpg" alt="">
+                        <div class="bg-img-carroussel">
+                            <div class="acciones">
+                                <div class="corazon"></div>
+                                <div class="descargar"></div>
+                                <div class="ampliar"></div>
+                            </div>
+                            div
+                        </div>
+                    </div>
+                    </div>
+                    <div class="img-carroussel"></div>
+                    <div class="img-carroussel"></div> -->
+                </div>
+                <div class="right-arrow" id="right-arrow"></div>
+            </div>
+        </section>
+        <section class="module" id="ampliarGifoSection">
+        </section>
+        <footer>
+            <div class="footer-redes-sociales">
+                <h4>Compartir en:</h4>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/" target="_blank"><div class="facebook"></div></a>
+                    <a href="https://twitter.com/" target="_blank"><div class="twitter"></div></a>
+                    <a href="https://www.instagram.com/" target="_blank"><div class="instagram"></div></a>
+                </div>
+            </div>
+            <h4>&#169; GIFOS 2020 All rights Reserved.</h4>
+        </footer>
+    </main>
+    <script src="./assets/script/menu-hamburguesa.js"></script>
+    <script src="./assets/script/favoritos.js" type="module"></script>
+    <script src="./assets/script/trending-gifos.js" type="module"></script>
+</body>
+
+</html>

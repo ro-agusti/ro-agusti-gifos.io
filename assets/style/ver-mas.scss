@@ -1,0 +1,138 @@
+@import "_variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style: none;
+}
+.hidden{
+  display: none;
+}
+.ver-mas {
+  div {
+    margin-left: 5.6%;
+    margin-right: 5.6%;
+    .gifs {
+      display: grid;
+      grid-template-columns: repeat(2, 156px);
+      place-content: center;
+      gap: 25px;
+      .gifoCon {
+        img {
+          width: 156px;
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  .botton {
+    margin: auto;
+    width: 127px;
+    height: 50px;
+    text-align: center;
+    border: solid $primary-color 1px;
+    border-radius: 50px;
+    margin-top: 78px;
+    margin-bottom: 78px;
+    a {
+      font-family: $primary-font-family;
+      font-size: 13px;
+      color: $primary-color;
+      letter-spacing: 0;
+      line-height: 50px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $primary-color;
+      a {
+        color: $bg-blanco;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .ver-mas {
+    div {
+      margin-left: 10.8%;
+      margin-right: 10.8%;
+      .gifs {
+        grid-template-columns: repeat(4, 260px);
+        gap: 33px;
+        .gifoCon {
+          position: relative;
+          img {
+            width: 260px;
+            height: 200px;
+          }
+          .bgGifo {
+            margin: 0;
+            position: absolute;
+            //opacity: 0.3;
+            top: 0;
+            width: 260px;
+            height: 200px;
+            background-color: $bg-hover-gifo;
+            //cursor: pointer;
+            padding: 0;
+            //position: relative;
+            // z-index: 10;
+            .acciones {
+              max-width: 260px;
+              display: flex;
+              justify-content: flex-end;
+              //float: right;
+              margin-right: 10px;
+              margin-top: 10px;
+              padding: 0;
+              .corazon {
+                width: 32px;
+                height: 32px;
+                background-image: url(../images/icon-fav-activado.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+                &:hover {
+                  background-image: url(../images//icon-fav-activado-hover.svg);
+                  background-repeat: no-repeat;
+                }
+                &:visited {
+                  background-image: url(../images/icon-fav-active.svg);
+                  background-repeat: no-repeat;
+                }
+              }
+              .descargar {
+                padding: 0;
+                width: 32px;
+                height: 32px;
+                margin-left: 10px;
+                background-image: url(../images/icon-download.svg);
+                background-repeat: no-repeat;
+                cursor: pointer;
+                &:hover {
+                  background-image: url(../images/icon-download-hover.svg);
+                  background-repeat: no-repeat;
+                }
+              }
+              .ampliar {
+                padding: 0;
+                width: 32px;
+                height: 32px;
+                margin-left: 10px;
+                background-image: url(../images//icon-max-normal.svg);
+                background-repeat: no-repeat;
+                cursor: pointer;
+                &:hover {
+                  background-image: url(../images/icon-max-hover.svg);
+                  background-repeat: no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

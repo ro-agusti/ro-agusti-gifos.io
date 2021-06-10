@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  list-style: none;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search img {
+  width: 72.8%;
+  margin: auto;
+}
+
+.search div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: solid 1px #FFFFFF;
+  border-radius: 30em;
+  width: 89%;
+  height: 50px;
+  margin: auto;
+}
+
+.search div input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #6B7989;
+  border: none;
+  border-radius: 30em;
+  padding-left: 14.7%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  background: none;
+}
+
+.search div .magnifier {
+  width: 25px;
+  height: 20px;
+  border: none;
+  background-image: url(../images/icon-search-modo-noct.svg);
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.trending {
+  margin-top: 31px;
+  margin-bottom: 45px;
+}
+
+.trending h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.trending p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 25px;
+  font-weight: medium;
+  width: 60%;
+  margin: auto;
+}
+
+@media screen and (min-width: 780px) {
+  .search img {
+    width: 27.7%;
+  }
+  .search div {
+    width: 38.3%;
+  }
+  .search div input {
+    color: #9CAFC3;
+    padding-left: 54px;
+  }
+  .trending h2 {
+    font-size: 18px;
+  }
+  .trending p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=night-search.css.map */

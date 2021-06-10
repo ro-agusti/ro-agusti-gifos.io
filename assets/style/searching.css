@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.searching {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searching .line-div {
+  margin: auto;
+  width: 157px;
+  height: 1px;
+  background-color: #9CAFC3;
+}
+
+.searching .type-of-gifo {
+  margin-top: 43px;
+  margin-bottom: 38px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.searching .conteiner {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.searching .conteiner .gifoCon img {
+  width: 156px;
+  height: 120px;
+}
+
+.sectionVerMas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionVerMas .btnVerMas {
+  margin-top: 78px;
+  margin-bottom: 79px;
+  width: 127px;
+  height: 50px;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.sectionVerMas .btnVerMas:hover {
+  background-color: #572EE5;
+  color: #FFFFFF;
+}
+
+.sin-resultados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sin-resultados h2 {
+  margin-top: 83.9px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sin-resultados .ouch {
+  margin-top: 109px;
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/icon-busqueda-sin-resultado.svg);
+  background-repeat: no-repeat;
+}
+
+.sin-resultados h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #50E3C2;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  margin-top: 29px;
+  margin-bottom: 149px;
+}
+
+@media screen and (min-width: 780px) {
+  .searching .line-div {
+    width: 338px;
+  }
+  .searching .type-of-gifo {
+    font-size: 35px;
+    line-height: 30px;
+  }
+  .searching .conteiner {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 29px;
+  }
+  .searching .conteiner .gifoCon {
+    position: relative;
+  }
+  .searching .conteiner .gifoCon img {
+    width: 260px;
+    height: 200px;
+  }
+  .searching .conteiner .gifoCon .bgGifo {
+    position: absolute;
+    top: 0;
+    width: 260px;
+    height: 200px;
+    background-color: rgba(87, 46, 229, 0.6);
+    cursor: pointer;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones {
+    max-width: 357px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .corazon {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icon-fav.svg);
+    background-repeat: no-repeat;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .corazon:hover {
+    background-image: url(../images/icon-fav-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .corazon:visited {
+    background-image: url(../images/icon-fav-active.svg);
+    background-repeat: no-repeat;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .descargar {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../images/icon-download.svg);
+    background-repeat: no-repeat;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .descargar:hover {
+    background-image: url(../images/icon-download-hover.svg);
+    background-repeat: no-repeat;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .ampliar {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../images//icon-max-normal.svg);
+    background-repeat: no-repeat;
+  }
+  .searching .conteiner .gifoCon .bgGifo .acciones .ampliar:hover {
+    background-image: url(../images/icon-max-hover.svg);
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=searching.css.map */

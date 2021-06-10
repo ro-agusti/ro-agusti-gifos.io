@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 50 50"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#572EE5;stroke-width:1.18;stroke-miterlimit:22.9256}
+    .fil1 {fill:#572EE5}
+    .fil2 {fill:#572EE5}
+    .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2215255498896">
+   <g>
+    <g id="GIFOS">
+     <g id="_00-UI-Kit">
+      <g id="icon-fav-hover">
+       <path class="fil0" d="M9.37 0l31.25 0c5.18,0 9.38,4.2 9.38,9.38l0 31.24c0,5.18 -4.2,9.38 -9.38,9.38l-31.25 0c-5.17,0 -9.37,-4.2 -9.37,-9.38l0 -31.25c0,-5.17 4.2,-9.37 9.38,-9.37z"/>
+       <g>
+        <path class="fil1" d="M25.43 14.84c1.5,-1.5 3.53,-2.34 5.65,-2.34 2.12,0 4.15,0.84 5.64,2.34 1.5,1.5 2.34,3.53 2.34,5.64 0,2.12 -0.84,4.15 -2.34,5.65l-10.85 10.85c-0.48,0.48 -1.26,0.48 -1.74,0l-10.85 -10.85c-3.12,-3.12 -3.12,-8.17 0,-11.29 3.11,-3.12 8.17,-3.12 11.29,0l0.43 0.43 0.43 -0.43zm-0.43 19.54l8.68 -8.69 1.31 -1.3c1.03,-1.03 1.62,-2.44 1.62,-3.91 0,-1.46 -0.59,-2.87 -1.62,-3.9 -1.04,-1.04 -2.45,-1.62 -3.91,-1.62 -1.47,0 -2.87,0.58 -3.91,1.62l-1.3 1.3c-0.48,0.48 -1.26,0.48 -1.74,0l-1.3 -1.3c-2.16,-2.16 -5.66,-2.16 -7.82,0 -2.16,2.15 -2.16,5.65 0,7.81l9.99 9.99z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <polygon class="fil2 str0" points="36.89,23.41 24.88,35.28 13.21,23.51 12.38,18.68 15.9,14.72 20.97,14.23 25.32,17.21 29.67,13.79 34.74,15.55 37.28,19.21 "/>
+  </g>
+ </g>
+</svg>

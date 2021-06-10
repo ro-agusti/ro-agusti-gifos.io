@@ -1,0 +1,198 @@
+@import "_variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.hidden {
+  display: none;
+}
+main {
+  margin-top: 95px;
+}
+.crear-gifo {
+  margin-left: 10.8%;
+  margin-top: 100px;
+  margin-right: 26.1%;
+  display: flex;
+  align-items: center;
+
+  .camera {
+    display: flex;
+    align-items: center;
+    align-self: start;
+    margin-top: 90.6px;
+    .camera-img {
+      width: 123px;
+      height: 192px;
+    }
+    .luz-camara-img {
+      width: 91px;
+      height: 141px;
+    }
+  }
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   // margin-right: 0;
+
+    .cuadrado {
+      width: 750px;
+      height: 340px;
+      border: 1px solid $primary-color;
+      //padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      .esquina {
+        border-top: solid 1px $green-color;
+        border-right: solid 1px $green-color;
+        width: 27px;
+        height: 27px;
+      }
+      .esquinas-sup {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .esq-izq-sup {
+          rotate: 270deg;
+        }
+      }
+
+      .centro {
+        .title {
+          //margin: auto;
+         // margin-top: 84px;
+          width: 100%;
+          font-family: $primary-font-family;
+          font-weight: bold;
+          font-size: 25px;
+          color: $primary-color;
+          text-align: center;
+          line-height: 35px;
+          span {
+            color: $green-color;
+          }
+        }
+        .paragraph {
+          //margin: auto;
+          margin-top: 3px;
+          font-family: $secondary-font-family;
+          font-size: 16px;
+          color: $color-black;
+          text-align: center;
+          line-height: 29px;
+        }
+        .video {
+          margin: auto;
+          border: blue solid 1px;
+          //background-color: blue;
+          width: 488px;
+          height: 310px;
+          //align-self: center;
+          //justify-self: center;
+        }
+      }
+      .esquinas-inf {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .esq-izq-inf {
+         rotate: 180deg; 
+        }
+        .esq-der-inf {
+          rotate: 90deg;
+        }
+      }
+    }
+    .operadores-crear-gifo {
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+      width: 100%;
+      .pasos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid 6.9px $primary-color;
+
+        .paso {
+          width: 32px;
+          height: 32px;
+          border: solid 1px $primary-color;
+          border-radius: 50%;
+          margin-bottom: 19px;
+
+          .h5 {
+            color: $primary-color;
+            text-align: center;
+            font-family: $secondary-font-family;
+            line-height: 32px;
+          }
+          &:nth-child(2) {
+            margin-left: 26px;
+            margin-right: 26px;
+          }
+        }
+      }
+    }
+
+    .paso_active {
+      width: 32px;
+      height: 32px;
+      border: solid 1px $primary-color;
+      border-radius: 50%;
+      margin-bottom: 19px;
+      background-color: $primary-color;
+
+      .h5_active {
+        color: $bg-blanco;
+        text-align: center;
+        font-family: $secondary-font-family;
+        line-height: 32px;
+      }
+      &:nth-child(2) {
+        margin-left: 26px;
+        margin-right: 26px;
+      }
+    }
+    .btn-comenzar {
+      border: 1px solid $primary-color;
+      border-radius: 25px;
+      background: none;
+      width: 127px;
+      height: 50px;
+      margin: auto;
+      margin-top: 20px;
+      font-family: $primary-font-family;
+      font-size: 13px;
+      font-weight: bold;
+      color: $primary-color;
+      letter-spacing: 0;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary-color;
+        color: $bg-blanco;
+      }
+    }
+  }
+  .operador-img {
+    
+    margin-left: 0;
+    background-color: red;
+    //background-image: url(../images/pelicula.svg);
+   // background-repeat: no-repeat;
+   // background-size: contain;
+    width: 200px;
+    height: 100px;
+    //align-self: flex-end;
+    //margin-bottom: 50px;
+    //margin-left: 67px;
+    //margin-right: 167.4px;
+  }
+}

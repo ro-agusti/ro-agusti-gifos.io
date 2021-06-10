@@ -1,0 +1,1 @@
+import { ampliarGifo, getFavoritos } from './index.js';
