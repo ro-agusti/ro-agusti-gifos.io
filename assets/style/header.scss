@@ -10,6 +10,10 @@
   padding-top: 95px;
 } */
 .header {
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+  
   z-index: 5;
   border-top: $primary-color solid 5px;
   background-color: $bg-blanco;
@@ -40,12 +44,12 @@
         width: 14px;
         height: 14px;
         background-image: url(../images/burger.svg);
-       /*  &:active {
+        /*  &:active {
           background-image: url(../images/close.svg);
         } */
       }
     }
-    .burger-close{
+    .burger-close {
       display: none;
       border: none;
       div {
@@ -69,7 +73,7 @@
           color: $primary-color;
           display: block;
           text-transform: uppercase;
-          
+
           &:hover {
             text-decoration: underline 2px;
             text-decoration-color: $secondary-color;
@@ -95,7 +99,7 @@
     }
   }
 }
-main{
+main {
   margin-top: 95px;
 }
 @media screen and (max-width: 768px) {

@@ -10,6 +10,9 @@
   padding-top: 95px;
 } */
 .header {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+          box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   z-index: 5;
   border-top: #572EE5 solid 5px;
   background-color: #FFFFFF;
@@ -229,6 +232,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* .camera-img-left{
+    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+   
+  } */
 }
 
 .crear-gifo .camera {
@@ -262,6 +272,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin-top: 10px;
 }
 
 .crear-gifo .conteiner .cuadrado {
@@ -442,10 +453,18 @@ main {
 }
 
 .crear-gifo .operador-img {
-  margin-left: 0;
-  background-color: red;
+  position: absolute;
+  float: right;
+  background-image: url(../images/pelicula.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 200px;
   height: 100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateX(1100px);
+          transform: translateX(1100px);
+  margin-bottom: 76px;
 }
 
 * {
@@ -457,8 +476,6 @@ main {
 }
 
 footer {
-  -webkit-box-shadow: red;
-          box-shadow: red;
   border-bottom: #572EE5 solid 5px;
 }
 

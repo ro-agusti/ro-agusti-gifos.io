@@ -23,6 +23,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* .camera-img-left{
+    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+   
+  } */
 }
 
 .crear-gifo .camera {
@@ -56,6 +63,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin-top: 10px;
 }
 
 .crear-gifo .conteiner .cuadrado {
@@ -236,9 +244,17 @@ main {
 }
 
 .crear-gifo .operador-img {
-  margin-left: 0;
-  background-color: red;
+  position: absolute;
+  float: right;
+  background-image: url(../images/pelicula.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 200px;
   height: 100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateX(1100px);
+          transform: translateX(1100px);
+  margin-bottom: 76px;
 }
 /*# sourceMappingURL=crea-gifo.css.map */

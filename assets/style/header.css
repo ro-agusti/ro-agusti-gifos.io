@@ -10,6 +10,9 @@
   padding-top: 95px;
 } */
 .header {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+          box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   z-index: 5;
   border-top: #572EE5 solid 5px;
   background-color: #FFFFFF;

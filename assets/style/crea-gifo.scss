@@ -36,7 +36,7 @@ main {
     flex-direction: column;
     width: 100%;
    // margin-right: 0;
-
+    margin-top: 10px;
     .cuadrado {
       width: 750px;
       height: 340px;
@@ -181,18 +181,24 @@ main {
       }
     }
   }
-  .operador-img {
+  /* .camera-img-left{
     
-    margin-left: 0;
-    background-color: red;
-    //background-image: url(../images/pelicula.svg);
-   // background-repeat: no-repeat;
-   // background-size: contain;
-    width: 200px;
+    width: 100px;
     height: 100px;
-    //align-self: flex-end;
-    //margin-bottom: 50px;
-    //margin-left: 67px;
-    //margin-right: 167.4px;
-  }
+    background-color: red;
+   
+  } */
+  .operador-img {
+  position: absolute;
+  float: right;
+  background-image: url(../images/pelicula.svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+  width: 200px;
+  height: 100px;
+  align-self: flex-end;
+  transform: translateX(1100px);
+  margin-bottom: 76px;
+  //margin-left: auto;
+} 
 }
