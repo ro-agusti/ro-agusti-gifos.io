@@ -23,13 +23,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* .camera-img-left{
-    
-    width: 100px;
-    height: 100px;
-    background-color: red;
-   
-  } */
 }
 
 .crear-gifo .camera {
@@ -164,6 +157,7 @@ main {
           justify-content: center;
   margin-top: 24px;
   width: 100%;
+  border-bottom: solid 6.9px #572EE5;
 }
 
 .crear-gifo .conteiner .operadores-crear-gifo .pasos {
@@ -177,7 +171,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: solid 6.9px #572EE5;
 }
 
 .crear-gifo .conteiner .operadores-crear-gifo .pasos .paso {
@@ -200,7 +193,7 @@ main {
   margin-right: 26px;
 }
 
-.crear-gifo .conteiner .paso_active {
+.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso_active {
   width: 32px;
   height: 32px;
   border: solid 1px #572EE5;
@@ -209,16 +202,30 @@ main {
   background-color: #572EE5;
 }
 
-.crear-gifo .conteiner .paso_active .h5_active {
+.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso_active .h5_active {
   color: #FFFFFF;
   text-align: center;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
 }
 
-.crear-gifo .conteiner .paso_active:nth-child(2) {
+.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso_active:nth-child(2) {
   margin-left: 26px;
   margin-right: 26px;
+}
+
+.crear-gifo .conteiner .operadores-crear-gifo .cont-tiempo {
+  margin-left: auto;
+}
+
+.crear-gifo .conteiner .operadores-crear-gifo .cont-tiempo .tiempo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  font-weight: bold;
 }
 
 .crear-gifo .conteiner .btn-comenzar {
