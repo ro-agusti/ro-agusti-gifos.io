@@ -10,7 +10,7 @@
 main {
   margin-top: 95px;
 }
-.crear-gifo {
+.crear-gifo-cont{
   margin-left: 10.8%;
   margin-top: 100px;
   margin-right: 26.1%;
@@ -58,7 +58,8 @@ main {
         display: flex;
         justify-content: space-between;
         .esq-izq-sup {
-          rotate: 270deg;
+          transform: rotate(270deg);
+          
         }
       }
 

@@ -85,7 +85,7 @@ paso3.addEventListener('click', () => {
 // ----- funcion acceder a la camara ---- 
 function accederCamara() {
 
-    if (typeof navigator.mediaDevices !== 'undefined') {
+   
         //----
         navigator.mediaDevices.getUserMedia({
 
@@ -96,7 +96,7 @@ function accederCamara() {
                 videoGifo.play()
             })
         //----
-    }
+    
 
     /* navigator.mediaDevices.getUserMedia({
         audio: false, video: true

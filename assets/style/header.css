@@ -113,17 +113,17 @@
   transition: 0.4s;
 }
 
-.header .menu .menu-ul li .crear-gifo {
+.header .menu .menu-ul li a .crear-gifo {
   width: 54px;
   height: 54px;
   background-image: url(../images/button-crear-gifo.svg);
 }
 
-.header .menu .menu-ul li .crear-gifo:hover {
+.header .menu .menu-ul li a .crear-gifo:hover {
   background-image: url(../images/CTA-crear-gifo-hover.svg);
 }
 
-.header .menu .menu-ul li .crear-gifo:active {
+.header .menu .menu-ul li a .crear-gifo:active {
   background-image: url(../images/CTA-crear-gifo-active.svg);
 }
 

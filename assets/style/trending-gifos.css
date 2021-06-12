@@ -46,18 +46,17 @@
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel {
   padding: 0;
-  width: 243px;
   height: 187px;
+  margin-right: 10px;
 }
 
 .trending-gifos .carroussel .img-carroussel-conteiner .img-carroussel img {
-  width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .trending-gifos .carroussel .right-arrow {

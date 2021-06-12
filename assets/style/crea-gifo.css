@@ -13,7 +13,7 @@ main {
   margin-top: 95px;
 }
 
-.crear-gifo {
+.crear-gifo-cont {
   margin-left: 10.8%;
   margin-top: 100px;
   margin-right: 26.1%;
@@ -25,7 +25,7 @@ main {
           align-items: center;
 }
 
-.crear-gifo .camera {
+.crear-gifo-cont .camera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,17 +37,17 @@ main {
   margin-top: 90.6px;
 }
 
-.crear-gifo .camera .camera-img {
+.crear-gifo-cont .camera .camera-img {
   width: 123px;
   height: 192px;
 }
 
-.crear-gifo .camera .luz-camara-img {
+.crear-gifo-cont .camera .luz-camara-img {
   width: 91px;
   height: 141px;
 }
 
-.crear-gifo .conteiner {
+.crear-gifo-cont .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +59,7 @@ main {
   margin-top: 10px;
 }
 
-.crear-gifo .conteiner .cuadrado {
+.crear-gifo-cont .conteiner .cuadrado {
   width: 750px;
   height: 340px;
   border: 1px solid #572EE5;
@@ -79,14 +79,14 @@ main {
   padding: 50px;
 }
 
-.crear-gifo .conteiner .cuadrado .esquina {
+.crear-gifo-cont .conteiner .cuadrado .esquina {
   border-top: solid 1px #50E3C2;
   border-right: solid 1px #50E3C2;
   width: 27px;
   height: 27px;
 }
 
-.crear-gifo .conteiner .cuadrado .esquinas-sup {
+.crear-gifo-cont .conteiner .cuadrado .esquinas-sup {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,11 +96,12 @@ main {
           justify-content: space-between;
 }
 
-.crear-gifo .conteiner .cuadrado .esquinas-sup .esq-izq-sup {
-  rotate: 270deg;
+.crear-gifo-cont .conteiner .cuadrado .esquinas-sup .esq-izq-sup {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 
-.crear-gifo .conteiner .cuadrado .centro .title {
+.crear-gifo-cont .conteiner .cuadrado .centro .title {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -110,11 +111,11 @@ main {
   line-height: 35px;
 }
 
-.crear-gifo .conteiner .cuadrado .centro .title span {
+.crear-gifo-cont .conteiner .cuadrado .centro .title span {
   color: #50E3C2;
 }
 
-.crear-gifo .conteiner .cuadrado .centro .paragraph {
+.crear-gifo-cont .conteiner .cuadrado .centro .paragraph {
   margin-top: 3px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -123,14 +124,14 @@ main {
   line-height: 29px;
 }
 
-.crear-gifo .conteiner .cuadrado .centro .video {
+.crear-gifo-cont .conteiner .cuadrado .centro .video {
   margin: auto;
   border: blue solid 1px;
   width: 488px;
   height: 310px;
 }
 
-.crear-gifo .conteiner .cuadrado .esquinas-inf {
+.crear-gifo-cont .conteiner .cuadrado .esquinas-inf {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,15 +141,15 @@ main {
           justify-content: space-between;
 }
 
-.crear-gifo .conteiner .cuadrado .esquinas-inf .esq-izq-inf {
+.crear-gifo-cont .conteiner .cuadrado .esquinas-inf .esq-izq-inf {
   rotate: 180deg;
 }
 
-.crear-gifo .conteiner .cuadrado .esquinas-inf .esq-der-inf {
+.crear-gifo-cont .conteiner .cuadrado .esquinas-inf .esq-der-inf {
   rotate: 90deg;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo {
+.crear-gifo-cont .conteiner .operadores-crear-gifo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +161,7 @@ main {
   border-bottom: solid 6.9px #572EE5;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +174,7 @@ main {
           justify-content: center;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos .paso {
   width: 32px;
   height: 32px;
   border: solid 1px #572EE5;
@@ -181,19 +182,19 @@ main {
   margin-bottom: 19px;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso .h5 {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos .paso .h5 {
   color: #572EE5;
   text-align: center;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso:nth-child(2) {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos .paso:nth-child(2) {
   margin-left: 26px;
   margin-right: 26px;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso_active {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos .paso_active {
   width: 32px;
   height: 32px;
   border: solid 1px #572EE5;
@@ -202,23 +203,23 @@ main {
   background-color: #572EE5;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso_active .h5_active {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos .paso_active .h5_active {
   color: #FFFFFF;
   text-align: center;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .pasos .paso_active:nth-child(2) {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .pasos .paso_active:nth-child(2) {
   margin-left: 26px;
   margin-right: 26px;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .cont-tiempo {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .cont-tiempo {
   margin-left: auto;
 }
 
-.crear-gifo .conteiner .operadores-crear-gifo .cont-tiempo .tiempo {
+.crear-gifo-cont .conteiner .operadores-crear-gifo .cont-tiempo .tiempo {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #572EE5;
@@ -228,7 +229,7 @@ main {
   font-weight: bold;
 }
 
-.crear-gifo .conteiner .btn-comenzar {
+.crear-gifo-cont .conteiner .btn-comenzar {
   border: 1px solid #572EE5;
   border-radius: 25px;
   background: none;
@@ -245,12 +246,12 @@ main {
   cursor: pointer;
 }
 
-.crear-gifo .conteiner .btn-comenzar:hover {
+.crear-gifo-cont .conteiner .btn-comenzar:hover {
   background-color: #572EE5;
   color: #FFFFFF;
 }
 
-.crear-gifo .operador-img {
+.crear-gifo-cont .operador-img {
   position: absolute;
   float: right;
   background-image: url(../images/pelicula.svg);

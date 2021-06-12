@@ -83,16 +83,16 @@
             color: $color-light-grey;
             transition: 0.4s;
           }
-        }
-        .crear-gifo {
-          width: 54px;
-          height: 54px;
-          background-image: url(../images/button-crear-gifo.svg);
-          &:hover {
-            background-image: url(../images/CTA-crear-gifo-hover.svg);
-          }
-          &:active {
-            background-image: url(../images/CTA-crear-gifo-active.svg);
+          .crear-gifo {
+            width: 54px;
+            height: 54px;
+            background-image: url(../images/button-crear-gifo.svg);
+            &:hover {
+              background-image: url(../images/CTA-crear-gifo-hover.svg);
+            }
+            &:active {
+              background-image: url(../images/CTA-crear-gifo-active.svg);
+            }
           }
         }
       }

@@ -1,14 +1,17 @@
 
 //--- cambiar a modo nocturno
-/* const theme = document.getElementById('theme');
+const theme = document.getElementById('theme');
+const aTheme = document.getElementById('aTheme');
 const btnNightMode = document.getElementById('nightMode');
 btnNightMode.addEventListener('click', () =>{
     if(theme.getAttribute('href')== './assets/style/style.css'){
         theme.href = './assets/night-style/night-style.css';
+        aTheme.textContent='Modo Diurno';
     }else{
         theme.href = './assets/style/style.css';
+        aTheme.textContent='Modo Nocturno';
     }
-});  */
+});  
 
 // ---- searching ----
 const buscador = document.getElementById('buscador');
@@ -22,7 +25,7 @@ window.addEventListener("keydown", (e) => {
     magnifier2.classList.add('hidden');
     buscador.classList.remove('buscador');
     buscador.classList.add('buscador-con-sugerencias');
-    suggestion(e);
+    suggestion(search.value);
     if (e.key == "Enter") {
         magnifier1.classList.add('hidden');
         magnifier2.classList.remove('hidden');
@@ -45,20 +48,21 @@ window.addEventListener("keydown", (e) => {
 const favoritos = [];
 
 let cantidad = 12;
-const btnVerMas = document.getElementById('btnVerMas');
-/* btnVerMas.addEventListener('click', () => {
+const buttonVerMas = document.getElementById('btnVerMas');
+
+/* buttonVerMas.addEventListener('click', () => {
     cantidad += 12;
     console.log(cantidad);
     newSearch(search.value);
     if (cantidad >= 30) {
-        btnVerMas.classList.add('hidden');
+        buttonVerMas.classList.add('hidden');
     }
 }) */
 
 //---- funcion de sugerencias -----
 async function suggestion(tag) {
     const apiKey = 'SNJ9a5GbDjgSmOddC8ab03rQXLhxjPvS';
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${tag}&limit=100`;
+    const url = `https://api.giphy.com/v1/tags/related/{${tag}}?api_key=${apiKey}`;
     try {
         const resp = await fetch(url);
         const info = await resp.json();
@@ -68,8 +72,8 @@ async function suggestion(tag) {
         }
 
         for (let i = 0; i < 4; i++) {
-
-            let suggestionX = info.data[i].title;
+            
+            let suggestionX = info.data[i].name;
             let li = document.createElement('li');
             let magnifierLI = document.createElement('div');
             magnifierLI.classList.add('magnifier');
@@ -108,7 +112,7 @@ async function newSearch(gifo) {
             searching.lastChild.remove()
         }
 
-        btnVerMas.classList.remove('hidden');
+        buttonVerMas.classList.remove('hidden');
         //btnVerMas.classList.add('btnVerMas');
 
 
@@ -190,7 +194,7 @@ async function newSearch(gifo) {
         console.log(err);
         const sinResultados = document.getElementById('sinResultados');
         sinResultados.classList.remove('hidden');
-        btnVerMas.classList.add('hidden');
+        buttonVerMas.classList.add('hidden');
     }
 
 }
