@@ -98,17 +98,6 @@
           align-items: center;
 }
 
-.sin-resultados h2 {
-  margin-top: 83.9px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  color: #572EE5;
-  text-align: center;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .sin-resultados .ouch {
   margin-top: 109px;
   width: 150px;
@@ -119,13 +108,32 @@
 
 .sin-resultados h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   color: #50E3C2;
   text-align: center;
   line-height: 25px;
   font-weight: bold;
   margin-top: 29px;
   margin-bottom: 149px;
+}
+
+.dark .searching .line-div {
+  background-color: #FFFFFF;
+}
+
+.dark .searching .type-of-gifo {
+  color: #FFFFFF;
+}
+
+.dark .sectionVerMas .btnVerMas {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: #37383C;
+}
+
+.dark .sectionVerMas .btnVerMas:hover {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 @media screen and (min-width: 780px) {
@@ -208,6 +216,9 @@
   .searching .conteiner .gifoCon .bgGifo .acciones .ampliar:hover {
     background-image: url(../images/icon-max-hover.svg);
     background-repeat: no-repeat;
+  }
+  .sin-resultados h3 {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=searching.css.map */

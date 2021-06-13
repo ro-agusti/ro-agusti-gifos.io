@@ -1,23 +1,7 @@
 
-import {  getFavoritos } from './index.js';
 
-//--- cambiar a modo nocturno
-/* const themeFav = document.getElementById('dark-theme-fav');
-const aTheme = document.getElementById('aTheme');
-const btnNightMode = document.getElementById('nightMode');
-btnNightMode.addEventListener('click', () =>{
-    if(themeFav.getAttribute('href')== './assets/style/style.css'){
-        themeFav.href = './assets/night-style/night-style-fav.css';
-        aTheme.textContent='Modo Diurno';
-    }else{
-        themeFav.href = './assets/style/style.css';
-        aTheme.textContent='Modo Nocturno';
-    }
-});  
- */
 
-//btnVerMas.classList.add('hidden');
-//console.log(localStorage.getItem(''));
+
 let storageFavoritos = localStorage.getItem('favoritos');
 let favoritos;
 if (storageFavoritos) {
@@ -29,7 +13,7 @@ const gifsConteiner = document.getElementById('gifsConteiner');
 console.log(favoritos);
 const btnVerMasFav = document.getElementById('btn-verMas-favoritos');
 const emptyFavorite = document.getElementById('emptyFavorite');
-//import {ampliarGifo}  from './index.js';
+
 
 
 
@@ -53,10 +37,7 @@ const getGifoForEach = (array) => {
                 bgGifo.appendChild(acciones);
                 let corazon = document.createElement('div');
                 corazon.classList = 'corazon';
-                //corazon.getAttribute('id');
-                //corazon.setAttribute('id', info.data[i].id);//-----------------
                 acciones.appendChild(corazon);
-                //console.log(corazon);
                 let descargar = document.createElement('div');
                 descargar.classList = 'descargar';
                 acciones.appendChild(descargar);
@@ -66,8 +47,6 @@ const getGifoForEach = (array) => {
                 corazon.addEventListener('click', () => {
                     removeGifoFromFavoritos(array,el);
                     gifoCont.classList.add('hidden');
-                    //array.filter(x => x == el);
-                    //array.slice()
                 }) 
                ampliar.addEventListener('click',()=>{
                     ampliarGifoFav(el);
@@ -91,7 +70,6 @@ const getGifoForEach = (array) => {
     } else {
         btnVerMasFav.classList.add('hidden');
         emptyFavorite.classList.remove('hidden');
-        //console.log('array vacio')
     }
 
 };
@@ -114,7 +92,7 @@ function removeGifoFromFavoritos( arr, item ) {
 getGifoForEach(favoritos);
 
 //----- ampliar gifo -----
-const ampliarGifoSection = document.getElementById('ampliarGifoSection');
+/* const ampliarGifoSection = document.getElementById('ampliarGifoSection');
 function ampliarGifoFav(el) {
     let divContGn = document.createElement('div');
     divContGn.classList.add('ampliar_gifo');
@@ -171,4 +149,17 @@ function ampliarGifoFav(el) {
         a.dataset.downloadurl = ['application/octet-stream', a.download, a.href].join(':');
         a.click()
     })
-}
+} */
+
+//----
+/* function getFavoritos(newGifo) {
+    let itemFavorito = favoritos.find(el => el.id == newGifo.id);
+    if (itemFavorito) {
+        console.log('ya es un favorito');
+    } else {
+        favoritos.push(newGifo);
+        console.log('se agrego al carrito');
+        console.log(favoritos);
+        localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    }
+} */

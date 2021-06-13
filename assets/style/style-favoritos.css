@@ -20,8 +20,6 @@ body {
 }
 
 .header {
-  -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-          box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   z-index: 5;
   border-top: #572EE5 solid 5px;
   background-color: #FFFFFF;
@@ -29,11 +27,6 @@ body {
   top: 0;
   left: 0;
   position: fixed;
-  /* &.dark {
-    background-color: $bg-night-mode;
-    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
-    border-top: $color-black solid 5px;
-  } */
 }
 
 .header .menu {
@@ -58,9 +51,6 @@ body {
   width: 70px;
   height: 60px;
   cursor: pointer;
-  /* &.dark {
-        background-image: url(../images/Logo-modo-noc.svg);
-      } */
 }
 
 .header .menu .burger {
@@ -74,9 +64,6 @@ body {
   background-image: url(../images/burger.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  /* &.dark {
-          background-image: url(../images/burger-modo-noct.svg);
-        } */
 }
 
 .header .menu .burger-close {
@@ -88,9 +75,6 @@ body {
   width: 14px;
   height: 14px;
   background-image: url(../images/close.svg);
-  /* .dark {
-          background-image: url(../images/close-modo-noct.svg);
-        } */
 }
 
 .header .menu .menu-ul {
@@ -118,9 +102,6 @@ body {
   color: #572EE5;
   display: block;
   text-transform: uppercase;
-  /*  &.dark {
-            color: $bg-blanco;
-          } */
 }
 
 .header .menu .menu-ul li a:hover {
@@ -142,15 +123,6 @@ body {
   width: 54px;
   height: 54px;
   background-image: url(../images/button-crear-gifo.svg);
-  /* &.dark {
-              background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
-              &:hover {
-                background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
-              }
-              &:active {
-                background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
-              }
-            } */
 }
 
 .header .menu .menu-ul li a .crear-gifo:hover {
@@ -161,14 +133,17 @@ body {
   background-image: url(../images/CTA-crear-gifo-active.svg);
 }
 
+.shadow {
+  -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+          box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+}
+
 .dark {
   background-color: #37383C;
 }
 
 .dark .header {
   background-color: #37383C;
-  -webkit-box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
-          box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
   border-top: #000000 solid 5px;
 }
 
@@ -210,6 +185,11 @@ body {
   background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
 }
 
+.dark .shadow {
+  -webkit-box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+          box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+}
+
 main {
   margin-top: 100px;
 }
@@ -218,12 +198,6 @@ main {
   .header .menu {
     padding-left: 22px;
     padding-right: 26px;
-    /* .burger_active {
-        border: none;
-        width: 14px;
-        height: 14px;
-        background-image: url(./assets/images/close.svg); 
-      }*/
   }
   .header .menu .logo {
     background-image: url(../images/logo-mobile.svg);
@@ -231,9 +205,6 @@ main {
     background-size: contain;
     width: 48.8px;
     height: 48.8px;
-    /* &.dark {
-          background-image: url(../images/logo-mobile-modo-noct.svg);
-        } */
   }
   .header .menu .burger {
     display: block;
@@ -262,9 +233,6 @@ main {
     top: 95px;
     overflow-y: auto;
     padding-top: 32px;
-    /* &.dark {
-          background-color: $bg-night-mode-secondaryr;
-        } */
   }
   .header .menu .menu-ul li {
     line-height: 30px;
@@ -336,6 +304,8 @@ main {
 }
 
 .empty-favorite {
+  margin: auto;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +338,7 @@ main {
   margin-top: 23.7px;
   margin-bottom: 137px;
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   color: #50E3C2;
   text-align: center;
   line-height: 33px;
@@ -392,6 +362,9 @@ main {
   .tittle .corazon-favoritos {
     margin-top: 11px;
   }
+  .empty-favorite {
+    width: 100%;
+  }
   .empty-favorite .empty-favorite_img {
     margin-top: 62.3px;
     width: 150px;
@@ -403,6 +376,7 @@ main {
     height: 150px;
   }
   .empty-favorite .empty-favorite_title {
+    font-size: 22px;
     width: 431px;
   }
 }

@@ -1,18 +1,3 @@
-
-//--- cambiar a modo nocturno
-/* const theme = document.getElementById('theme');
-const aTheme = document.getElementById('aTheme');
-const btnNightMode = document.getElementById('nightMode');
-btnNightMode.addEventListener('click', () =>{
-    if(theme.getAttribute('href')== './assets/style/style.css'){
-        theme.href = './assets/night-style/night-style.css';
-        aTheme.textContent='Modo Diurno';
-    }else{
-        theme.href = './assets/style/style.css';
-        aTheme.textContent='Modo Nocturno';
-    }
-});   */
-
 // ---- searching ----
 const buscador = document.getElementById('buscador');
 const search = document.getElementById('buscaGifos');
@@ -20,6 +5,8 @@ const trending = document.getElementById('trending');
 const magnifier1 = document.getElementById('magnifier1');
 const magnifier2 = document.getElementById('magnifier2');
 const contLi = document.getElementById('cont-li');
+const closeSuggestion = document.getElementById('closeSuggestion');
+
 window.addEventListener("keydown", (e) => {
     magnifier1.classList.remove('hidden');
     magnifier2.classList.add('hidden');
@@ -31,34 +18,31 @@ window.addEventListener("keydown", (e) => {
         magnifier2.classList.remove('hidden');
         buscador.classList.add('buscador');
         buscador.classList.remove('buscador-con-sugerencias');
-        // console.log(search.value);
         let busqueda = search.value;
         newSearch(busqueda);
-        /* if(busqueda.length>0){
-            suggestion(e); 
-        } */
-        //trending.classList.add('hidden');
     }
 });
+closeSuggestion.addEventListener('click', () => {
+    magnifier1.classList.add('hidden');
+    magnifier2.classList.remove('hidden');
+    buscador.classList.remove('buscador-con-sugerencias');
+    buscador.classList.add('buscador');
+})
 
-/* if(search.value.length>0){
-    suggestion(); 
-}
- */
 const favoritos = [];
 
 let cantidad = 12;
 const buttonVerMas = document.getElementById('btnVerMas');
 
-/* buttonVerMas.addEventListener('click', () => {
+buttonVerMas.addEventListener('click', () => {
     cantidad += 12;
     console.log(cantidad);
     newSearch(search.value);
-    if (cantidad >= 30) {
-        buttonVerMas.classList.add('hidden');
-    }
-}) */
 
+})
+if (cantidad>= 30) {
+    buttonVerMas.classList.add('hidden');
+}
 //---- funcion de sugerencias -----
 async function suggestion(tag) {
     const apiKey = 'SNJ9a5GbDjgSmOddC8ab03rQXLhxjPvS';
@@ -72,7 +56,7 @@ async function suggestion(tag) {
         }
 
         for (let i = 0; i < 4; i++) {
-            
+
             let suggestionX = info.data[i].name;
             let li = document.createElement('li');
             let magnifierLI = document.createElement('div');
@@ -92,10 +76,19 @@ async function suggestion(tag) {
 }
 
 
-// ---- eliminar btn ver mas al superar los 50 gifos ----
+//---- buscador superior ----
+window.addEventListener('scroll',()=>{
+    buscador.classList.toggle('buscador-fixed',window.scrollY>350);
+    //buscador.classList.toggle('buscador-con-sugerencias-fixed',window.scrollY>350);
+})
+
+
+
+// ---- eliminar btn ver mas al superar los 30 gifos ----
 /* if (cantidad >= 30) {
     btnVerMas.classList.add('hidden');
 } */
+
 
 // ---- llamar a la API ----
 async function newSearch(gifo) {
@@ -113,9 +106,6 @@ async function newSearch(gifo) {
         }
 
         buttonVerMas.classList.remove('hidden');
-        //btnVerMas.classList.add('btnVerMas');
-
-
         const lineDiv = document.createElement('div');
         lineDiv.classList.add('line-div');
         searching.appendChild(lineDiv);
@@ -195,6 +185,7 @@ async function newSearch(gifo) {
         const sinResultados = document.getElementById('sinResultados');
         sinResultados.classList.remove('hidden');
         buttonVerMas.classList.add('hidden');
+
     }
 
 }
@@ -285,5 +276,5 @@ function ampliarGifo(el) {
         a.click()
     })
 }
-export { ampliarGifo, getFavoritos };
+//export { ampliarGifo, getFavoritos };
 

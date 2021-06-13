@@ -96,6 +96,7 @@
         }
       }
       .close {
+        cursor: pointer;
         width: 25px;
         height: 20px;
         border: none;
@@ -134,38 +135,38 @@
     margin: auto;
   }
 }
-.dark{
-  .search{
-    .buscador{
+.dark {
+  .search {
+    .buscador {
       border: solid 1px $bg-blanco;
-      .cont-search{
-        input{
+      .cont-search {
+        input {
           color: $bg-blanco;
           background: none;
         }
-        .magnifier{
+        .magnifier {
           background-image: url(../images/icon-search-modo-noct.svg);
         }
       }
     }
-    .buscador-con-sugerencias{
+    .buscador-con-sugerencias {
       border: solid 1px $bg-blanco;
-      .cont-search{
-        input{
+      .cont-search {
+        input {
           color: $bg-blanco;
           background: none;
         }
-        .close{
+        .close {
           background-image: url(../images/close-modo-noct.svg);
         }
       }
     }
   }
-  .trending{
-    h2{
+  .trending {
+    h2 {
       color: $bg-blanco;
     }
-    p{
+    p {
       color: $bg-blanco;
     }
   }
@@ -184,6 +185,60 @@
         }
       }
     }
+    .buscador-fixed {
+      z-index: 5;
+      top: 0;
+      position: fixed;
+      border: solid 1px $primary-color;
+      height: 50px;
+      width: 23.2%;
+      border-radius: 27px;
+      margin-left: 343px;
+      margin-top: 21px;
+      .cont-search {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        input {
+          width: 100%;
+          font-family: $secondary-font-family;
+          font-size: 16px;
+          text-align: left;
+          //color: black;
+          border: none;
+          border-radius: 30em;
+          // border-radius: 30px;
+          padding-left: 3.8%;
+          padding-top: 15px;
+          padding-bottom: 13px;
+          &:focus-visible {
+            outline: none;
+            background: none;
+          }
+        }
+        .magnifier {
+          width: 25px;
+          height: 20px;
+          border: none;
+          background-image: url(../images/icon-search.svg);
+          background-repeat: no-repeat;
+          margin-top: 15px;
+
+          margin-right: 20px;
+        }
+        .close {
+          display: none;
+        }
+      }
+
+      .line {
+        display: none;
+      }
+      .sugerencias {
+        display: none;
+      }
+    }
+
     .buscador-con-sugerencias {
       display: flex;
       flex-direction: column;
@@ -274,28 +329,40 @@
       font-size: 16px;
     }
   }
-  .dark{
-    .search{
-      .buscador-con-sugerencias{
+  .dark {
+    .search {
+      .buscador-fixed{
+        border: solid 1px $bg-blanco;
         .cont-search{
+          input{
+            color: $bg-blanco;
+          }
           .magnifier{
             background-image: url(../images/icon-search-modo-noct.svg);
           }
-          input{
+        }
+      }
+      .buscador-con-sugerencias {
+        .cont-search {
+          .magnifier {
+            background-image: url(../images/icon-search-modo-noct.svg);
+          }
+          input {
             color: $bg-blanco;
-          }.close{
+          }
+          .close {
             background-image: url(../images/close-modo-noct.svg);
           }
         }
-        .line{
+        .line {
           background-color: $bg-blanco;
         }
-        .sugerencias{
-          li{
-            .magnifier{
+        .sugerencias {
+          li {
+            .magnifier {
               background-image: url(../images/icon-search-modo-noct.svg);
             }
-            h6{
+            h6 {
               color: $bg-blanco;
             }
           }

@@ -130,6 +130,7 @@
 }
 
 .search .buscador-con-sugerencias .cont-search .close {
+  cursor: pointer;
   width: 25px;
   height: 20px;
   border: none;
@@ -215,6 +216,60 @@
   .search .buscador .cont-search input {
     color: #9CAFC3;
     padding-left: 54px;
+  }
+  .search .buscador-fixed {
+    z-index: 5;
+    top: 0;
+    position: fixed;
+    border: solid 1px #572EE5;
+    height: 50px;
+    width: 23.2%;
+    border-radius: 27px;
+    margin-left: 343px;
+    margin-top: 21px;
+  }
+  .search .buscador-fixed .cont-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .search .buscador-fixed .cont-search input {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    border: none;
+    border-radius: 30em;
+    padding-left: 3.8%;
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+  .search .buscador-fixed .cont-search input:focus-visible {
+    outline: none;
+    background: none;
+  }
+  .search .buscador-fixed .cont-search .magnifier {
+    width: 25px;
+    height: 20px;
+    border: none;
+    background-image: url(../images/icon-search.svg);
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  .search .buscador-fixed .cont-search .close {
+    display: none;
+  }
+  .search .buscador-fixed .line {
+    display: none;
+  }
+  .search .buscador-fixed .sugerencias {
+    display: none;
   }
   .search .buscador-con-sugerencias {
     display: -webkit-box;
@@ -309,6 +364,15 @@
   }
   .trending p {
     font-size: 16px;
+  }
+  .dark .search .buscador-fixed {
+    border: solid 1px #FFFFFF;
+  }
+  .dark .search .buscador-fixed .cont-search input {
+    color: #FFFFFF;
+  }
+  .dark .search .buscador-fixed .cont-search .magnifier {
+    background-image: url(../images/icon-search-modo-noct.svg);
   }
   .dark .search .buscador-con-sugerencias .cont-search .magnifier {
     background-image: url(../images/icon-search-modo-noct.svg);

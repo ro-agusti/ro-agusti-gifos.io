@@ -35,6 +35,8 @@
 }
 
 .empty-favorite {
+  margin: auto;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +69,7 @@
   margin-top: 23.7px;
   margin-bottom: 137px;
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   color: #50E3C2;
   text-align: center;
   line-height: 33px;
@@ -91,6 +93,9 @@
   .tittle .corazon-favoritos {
     margin-top: 11px;
   }
+  .empty-favorite {
+    width: 100%;
+  }
   .empty-favorite .empty-favorite_img {
     margin-top: 62.3px;
     width: 150px;
@@ -102,6 +107,7 @@
     height: 150px;
   }
   .empty-favorite .empty-favorite_title {
+    font-size: 22px;
     width: 431px;
   }
 }

@@ -19,8 +19,8 @@ body {
 }
 
 .header {
-  //background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+
+  //box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   z-index: 5;
   border-top: $primary-color solid 5px;
   background-color: $bg-blanco;
@@ -28,12 +28,6 @@ body {
   top: 0;
   left: 0;
   position: fixed;
-
-  /* &.dark {
-    background-color: $bg-night-mode;
-    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
-    border-top: $color-black solid 5px;
-  } */
   .menu {
     height: 95px;
     display: flex;
@@ -48,9 +42,6 @@ body {
       width: 70px;
       height: 60px;
       cursor: pointer;
-      /* &.dark {
-        background-image: url(../images/Logo-modo-noc.svg);
-      } */
     }
     .burger {
       display: none;
@@ -61,9 +52,6 @@ body {
         background-image: url(../images/burger.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        /* &.dark {
-          background-image: url(../images/burger-modo-noct.svg);
-        } */
       }
     }
     .burger-close {
@@ -73,10 +61,6 @@ body {
         width: 14px;
         height: 14px;
         background-image: url(../images/close.svg);
-        //-------------------------------------------------------
-        /* .dark {
-          background-image: url(../images/close-modo-noct.svg);
-        } */
       }
     }
     .menu-ul {
@@ -94,9 +78,6 @@ body {
           color: $primary-color;
           display: block;
           text-transform: uppercase;
-          /*  &.dark {
-            color: $bg-blanco;
-          } */
           &:hover {
             text-decoration: underline 2px;
             text-decoration-color: $secondary-color;
@@ -110,15 +91,6 @@ body {
             width: 54px;
             height: 54px;
             background-image: url(../images/button-crear-gifo.svg);
-            /* &.dark {
-              background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
-              &:hover {
-                background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
-              }
-              &:active {
-                background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
-              }
-            } */
             &:hover {
               background-image: url(../images/CTA-crear-gifo-hover.svg);
             }
@@ -131,11 +103,14 @@ body {
     }
   }
 }
+.shadow{
+  box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+}
 .dark {
   background-color: $bg-night-mode;
   .header {
     background-color: $bg-night-mode;
-    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+    //box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
     border-top: $color-black solid 5px;
     .menu {
       .logo {
@@ -156,7 +131,6 @@ body {
         }
       }
       .menu-ul{
-        //background-color:$bg-night-mode-secondary;
         li{
           a{
             color: $bg-blanco;
@@ -174,6 +148,9 @@ body {
       }
     }
   }
+  .shadow{
+    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+  }
 }
 main {
   margin-top: 100px;
@@ -189,9 +166,6 @@ main {
         background-size: contain;
         width: 48.8px;
         height: 48.8px;
-        /* &.dark {
-          background-image: url(../images/logo-mobile-modo-noct.svg);
-        } */
       }
       .burger {
         display: block;
@@ -199,12 +173,6 @@ main {
       .burger-close {
         display: block;
       }
-      /* .burger_active {
-        border: none;
-        width: 14px;
-        height: 14px;
-        background-image: url(./assets/images/close.svg); 
-      }*/
       .menu-ul {
         flex-direction: column;
         align-items: center;
@@ -218,10 +186,6 @@ main {
         top: 95px;
         overflow-y: auto;
         padding-top: 32px;
-        //--------------
-        /* &.dark {
-          background-color: $bg-night-mode-secondaryr;
-        } */
         li {
           line-height: 30px;
           a {

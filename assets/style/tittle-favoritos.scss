@@ -25,6 +25,8 @@
   }
 }
 .empty-favorite {
+  margin: auto;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -46,7 +48,7 @@
     margin-top: 23.7px;
     margin-bottom: 137px;
     font-family: $primary-font-family;
-    font-size: 22px;
+    font-size: 16px;
     color: $green-color;
     text-align: center;
     line-height: 33px;
@@ -74,6 +76,7 @@
     }
   }
   .empty-favorite {
+    width: 100%;
     .empty-favorite_img {
       margin-top: 62.3px;
       width: 150px;
@@ -85,6 +88,7 @@
       height: 150px;
     }
     .empty-favorite_title {
+      font-size: 22px;
       width: 431px;
     }
   }
