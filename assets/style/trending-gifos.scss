@@ -60,6 +60,19 @@
     }
   }
 }
+.dark{
+  .trending-gifos{
+    background-color: $bg-night-mode-secondary;
+    .tittle-trending-gifo{
+      h2{
+        color: $bg-blanco;
+      }
+      p{
+        color: $bg-blanco;
+      }
+    }
+  }
+}
 @media screen and (min-width: 780px) {
   /* .hover{
     transform: scale(1.2);
@@ -206,6 +219,21 @@
         cursor: pointer;
         &:hover {
           background-image: url(../images/Button-Slider-right-hover.svg);
+        }
+      }
+    }
+  }
+  .dark{
+    .trending-gifos{
+      .carroussel{
+        .left-arrow{
+          background-image: url(../images/button-slider-left-md-noct.svg);
+          &:hover {
+            background-image: url(../images/button-slider-left-hover.svg);
+          }
+        }
+        .right-arrow{
+          background-image: url(../images/button-slider-right-md-noct.svg);
         }
       }
     }

@@ -1,6 +1,6 @@
 
 //--- cambiar a modo nocturno
-const theme = document.getElementById('theme');
+/* const theme = document.getElementById('theme');
 const aTheme = document.getElementById('aTheme');
 const btnNightMode = document.getElementById('nightMode');
 btnNightMode.addEventListener('click', () =>{
@@ -11,7 +11,7 @@ btnNightMode.addEventListener('click', () =>{
         theme.href = './assets/style/style.css';
         aTheme.textContent='Modo Nocturno';
     }
-});  
+});   */
 
 // ---- searching ----
 const buscador = document.getElementById('buscador');

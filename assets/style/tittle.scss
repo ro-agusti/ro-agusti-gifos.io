@@ -21,8 +21,18 @@
     text-align: center;
     line-height: 33px;
     font-weight: bold;
+    &.dark{
+      color: $bg-blanco;
+    }
     span {
       color: $secondary-color;
+    }
+  }
+}
+.dark{
+  .tittle{
+    .tittle-index{
+      color: $bg-blanco;
     }
   }
 }

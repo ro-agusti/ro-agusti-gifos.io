@@ -63,6 +63,18 @@
   display: none;
 }
 
+.dark .trending-gifos {
+  background-color: #222326;
+}
+
+.dark .trending-gifos .tittle-trending-gifo h2 {
+  color: #FFFFFF;
+}
+
+.dark .trending-gifos .tittle-trending-gifo p {
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 780px) {
   /* .hover{
     transform: scale(1.2);
@@ -216,6 +228,15 @@
   }
   .trending-gifos .carroussel .right-arrow:hover {
     background-image: url(../images/Button-Slider-right-hover.svg);
+  }
+  .dark .trending-gifos .carroussel .left-arrow {
+    background-image: url(../images/button-slider-left-md-noct.svg);
+  }
+  .dark .trending-gifos .carroussel .left-arrow:hover {
+    background-image: url(../images/button-slider-left-hover.svg);
+  }
+  .dark .trending-gifos .carroussel .right-arrow {
+    background-image: url(../images/button-slider-right-md-noct.svg);
   }
 }
 /*# sourceMappingURL=trending-gifos.css.map */

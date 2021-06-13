@@ -19,8 +19,6 @@
   }
   .buscador {
     padding-left: 21px;
-    //display: flex;
-
     border: solid 1px $primary-color;
     border-radius: 30em;
     width: 89%;
@@ -35,11 +33,8 @@
         font-family: $secondary-font-family;
         font-size: 16px;
         text-align: left;
-        //color: black;
         border: none;
         border-radius: 30em;
-        // border-radius: 30px;
-        // padding-left: 14.7%;
         padding-top: 15px;
         padding-bottom: 13px;
         &:focus-visible {
@@ -71,8 +66,6 @@
   }
   .buscador-con-sugerencias {
     padding-left: 21px;
-    //display: flex;
-
     border: solid 1px $primary-color;
     border-radius: 30em;
     width: 89%;
@@ -95,8 +88,6 @@
         color: $color-negro;
         border: none;
         border-radius: 30em;
-        // border-radius: 30px;
-        // padding-left: 14.7%;
         padding-top: 15px;
         padding-bottom: 13px;
         &:focus-visible {
@@ -143,6 +134,42 @@
     margin: auto;
   }
 }
+.dark{
+  .search{
+    .buscador{
+      border: solid 1px $bg-blanco;
+      .cont-search{
+        input{
+          color: $bg-blanco;
+          background: none;
+        }
+        .magnifier{
+          background-image: url(../images/icon-search-modo-noct.svg);
+        }
+      }
+    }
+    .buscador-con-sugerencias{
+      border: solid 1px $bg-blanco;
+      .cont-search{
+        input{
+          color: $bg-blanco;
+          background: none;
+        }
+        .close{
+          background-image: url(../images/close-modo-noct.svg);
+        }
+      }
+    }
+  }
+  .trending{
+    h2{
+      color: $bg-blanco;
+    }
+    p{
+      color: $bg-blanco;
+    }
+  }
+}
 @media screen and (min-width: 780px) {
   .search {
     img {
@@ -160,7 +187,6 @@
     .buscador-con-sugerencias {
       display: flex;
       flex-direction: column;
-      //align-items: flex-start;
       width: 38.3%;
       height: 200px;
       border-radius: 27px;
@@ -190,9 +216,6 @@
           color: $color-negro;
           border: none;
           border-radius: 30em;
-          
-          // border-radius: 30px;
-          // padding-left: 14.7%;
           padding-top: 15px;
           background: none;
           padding-bottom: 13px;
@@ -249,6 +272,35 @@
     }
     p {
       font-size: 16px;
+    }
+  }
+  .dark{
+    .search{
+      .buscador-con-sugerencias{
+        .cont-search{
+          .magnifier{
+            background-image: url(../images/icon-search-modo-noct.svg);
+          }
+          input{
+            color: $bg-blanco;
+          }.close{
+            background-image: url(../images/close-modo-noct.svg);
+          }
+        }
+        .line{
+          background-color: $bg-blanco;
+        }
+        .sugerencias{
+          li{
+            .magnifier{
+              background-image: url(../images/icon-search-modo-noct.svg);
+            }
+            h6{
+              color: $bg-blanco;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,6 +1,21 @@
 
 import {  getFavoritos } from './index.js';
 
+//--- cambiar a modo nocturno
+/* const themeFav = document.getElementById('dark-theme-fav');
+const aTheme = document.getElementById('aTheme');
+const btnNightMode = document.getElementById('nightMode');
+btnNightMode.addEventListener('click', () =>{
+    if(themeFav.getAttribute('href')== './assets/style/style.css'){
+        themeFav.href = './assets/night-style/night-style-fav.css';
+        aTheme.textContent='Modo Diurno';
+    }else{
+        themeFav.href = './assets/style/style.css';
+        aTheme.textContent='Modo Nocturno';
+    }
+});  
+ */
+
 //btnVerMas.classList.add('hidden');
 //console.log(localStorage.getItem(''));
 let storageFavoritos = localStorage.getItem('favoritos');

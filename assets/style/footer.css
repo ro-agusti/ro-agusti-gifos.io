@@ -72,6 +72,38 @@ footer .redes-sociales .instagram:hover {
   background-image: url(../images/icon_instagram-hover.svg);
 }
 
+.dark footer {
+  border-bottom: #000000 solid 5px;
+}
+
+.dark footer h4 {
+  color: #FFFFFF;
+}
+
+.dark footer .redes-sociales .facebook {
+  background-image: url(../images/icon_facebook_noc.svg);
+}
+
+.dark footer .redes-sociales .facebook:hover {
+  background-image: url(../images/icon_facebook_hover.svg);
+}
+
+.dark footer .redes-sociales .twitter {
+  background-image: url(../images/icon_twitter_noc.svg);
+}
+
+.dark footer .redes-sociales .twitter:hover {
+  background-image: url(../images/icon-twitter-hover.svg);
+}
+
+.dark footer .redes-sociales .instagram {
+  background-image: url(../images/icon_instagram_noc.svg);
+}
+
+.dark footer .redes-sociales .instagram:hover {
+  background-image: url(../images/icon_instagram-hover.svg);
+}
+
 @media screen and (min-width: 780px) {
   footer {
     height: 116px;

@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/logo-desktop.svg" />
-    <link rel="stylesheet" href="./assets/style/style-favoritos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>GIFOS</title>
+    <link rel="stylesheet" href="./assets/style/style-favoritos.css" id="dark-theme-fav">
+
 </head>
 
 <body>
@@ -22,16 +23,16 @@
             <button class="burger" id="burger">
                 <div></div>
             </button>
-            <!-- <div class="burger" id="burger"></div> -->
-
             <ul class="menu-ul" id="menu-ul">
-                <li id="nightMode"><a href="./modo-nocturno.html">Modo Nocturno</a></li>
+                <li id="nightMode"><a id="aTheme">Modo Nocturno</a></li>
                 <div></div>
                 <li id="favorite"><a href="./favoritos.html">Favoritos</a></li>
                 <div></div>
                 <li id="myGifos"><a href="./mis-gifos.html">Mis GIFOS</a></li>
                 <li id="createGifo">
-                    <a href="./crea-gifo.html"><div class="crear-gifo"></div></a>
+                    <a href="./crea-gifo.html">
+                        <div class="crear-gifo"></div>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -108,6 +109,7 @@
         </footer>
     </main>
    <!--  <script src="./assets/script/index.js" type="module"></script> -->
+   <script src="./assets/script/modo-nocturno.js"></script>
     <script src="./assets/script/menu-hamburguesa.js"></script>
     <script src="./assets/script/trending-gifos.js" type="module"></script>
     <script src="./assets/script/favoritos.js" type="module"></script>

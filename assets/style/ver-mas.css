@@ -58,6 +58,14 @@
   color: #FFFFFF;
 }
 
+.dark .ver-mas .botton {
+  border: solid #FFFFFF 1px;
+}
+
+.dark .ver-mas .botton a {
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 780px) {
   .ver-mas div {
     margin-left: 10.8%;

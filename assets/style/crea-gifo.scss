@@ -10,7 +10,7 @@
 main {
   margin-top: 95px;
 }
-.crear-gifo-cont{
+.crear-gifo-cont {
   margin-left: 10.8%;
   margin-top: 100px;
   margin-right: 26.1%;
@@ -23,12 +23,21 @@ main {
     align-self: start;
     margin-top: 90.6px;
     .camera-img {
+      // position: absolute;
+      // float: left;
+      //transform: translateX(1000px);
       width: 123px;
       height: 192px;
+      // background-image: url(../images/camara.svg);
+      // background-repeat: no-repeat;
+      // background-size: contain;
     }
     .luz-camara-img {
       width: 91px;
       height: 141px;
+      // background-image: url(../images/Path\ 2.svg);
+      // background-repeat: no-repeat;
+      //  background-size: contain;
     }
   }
   .conteiner {
@@ -59,7 +68,6 @@ main {
         justify-content: space-between;
         .esq-izq-sup {
           transform: rotate(270deg);
-          
         }
       }
 
@@ -89,7 +97,7 @@ main {
         }
         .video {
           margin: auto;
-          border: blue solid 1px;
+          //border: blue solid 1px;
           width: 488px;
           height: 310px;
         }
@@ -99,10 +107,10 @@ main {
         display: flex;
         justify-content: space-between;
         .esq-izq-inf {
-          rotate: 180deg;
+          transform: rotate(180deg);
         }
         .esq-der-inf {
-          rotate: 90deg;
+          transform: rotate(90deg);
         }
       }
     }
@@ -203,5 +211,60 @@ main {
     align-self: flex-end;
     transform: translateX(1100px);
     margin-bottom: 76px;
+  }
+}
+.dark {
+  .conteiner {
+    .cuadrado {
+      border: 1px solid $bg-blanco;
+      .esquina {
+        border-top: solid 1px $bg-blanco;
+        border-right: solid 1px $bg-blanco;
+      }
+      .centro{
+        .title{
+          color: $bg-blanco;
+        }
+        .paragraph{
+          color: $bg-blanco;
+        }
+      }
+    }
+    .operadores-crear-gifo{
+      border-bottom: solid 6.9px $bg-blanco;
+      .pasos{
+        .paso{
+          border: solid 1px $bg-blanco;
+          .h5{
+            color: $bg-blanco;
+          }
+        }
+        .paso_active{
+          border: solid 1px $bg-blanco;
+          background-color: $bg-blanco;
+          .h5_active{
+            color: $color-negro;
+          }
+        }
+      }
+      .cont-tiempo{
+        .tiempo{
+          color: $bg-blanco;
+        }
+      }
+    }
+    .btn-comenzar{
+      border: 1px solid $bg-blanco;
+      color: $bg-blanco;
+      &:hover {
+        background-color: $bg-blanco;
+        color: $color-negro;
+      }
+    }
+   /*  .operador-img{
+      background-image: url(../images/pelicula-modo-noc.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    } */
   }
 }

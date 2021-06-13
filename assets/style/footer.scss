@@ -59,6 +59,34 @@ footer {
     }
   }
 }
+.dark{
+  footer{
+    border-bottom: $color-negro solid 5px;
+    h4{
+      color: $bg-blanco;
+    }
+    .redes-sociales{
+      .facebook{
+        background-image: url(../images/icon_facebook_noc.svg);
+        &:hover{
+          background-image: url(../images/icon_facebook_hover.svg);
+        }
+      }
+      .twitter{
+        background-image: url(../images/icon_twitter_noc.svg);
+        &:hover{
+          background-image: url(../images/icon-twitter-hover.svg);
+        }
+      }
+      .instagram{
+        background-image: url(../images/icon_instagram_noc.svg);
+        &:hover{
+          background-image: url(../images/icon_instagram-hover.svg);
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 780px) {
   footer {
     height: 116px;

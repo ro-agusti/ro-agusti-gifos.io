@@ -6,11 +6,20 @@
   list-style: none;
 }
 
-/* body {
-  padding-top: 95px;
-} */
+body {
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  /* .dark {
+    background-color: $bg-night-mode;
+    &.header{
+      background-color: $bg-night-mode;
+    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+    border-top: $color-black solid 5px;
+    }
+  } */
+}
+
 .header {
-  background: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
           box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   z-index: 5;
@@ -20,6 +29,11 @@
   top: 0;
   left: 0;
   position: fixed;
+  /* &.dark {
+    background-color: $bg-night-mode;
+    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+    border-top: $color-black solid 5px;
+  } */
 }
 
 .header .menu {
@@ -44,6 +58,9 @@
   width: 70px;
   height: 60px;
   cursor: pointer;
+  /* &.dark {
+        background-image: url(../images/Logo-modo-noc.svg);
+      } */
 }
 
 .header .menu .burger {
@@ -55,8 +72,10 @@
   width: 14px;
   height: 14px;
   background-image: url(../images/burger.svg);
-  /*  &:active {
-          background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* &.dark {
+          background-image: url(../images/burger-modo-noct.svg);
         } */
 }
 
@@ -69,6 +88,9 @@
   width: 14px;
   height: 14px;
   background-image: url(../images/close.svg);
+  /* .dark {
+          background-image: url(../images/close-modo-noct.svg);
+        } */
 }
 
 .header .menu .menu-ul {
@@ -96,6 +118,9 @@
   color: #572EE5;
   display: block;
   text-transform: uppercase;
+  /*  &.dark {
+            color: $bg-blanco;
+          } */
 }
 
 .header .menu .menu-ul li a:hover {
@@ -117,6 +142,15 @@
   width: 54px;
   height: 54px;
   background-image: url(../images/button-crear-gifo.svg);
+  /* &.dark {
+              background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
+              &:hover {
+                background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
+              }
+              &:active {
+                background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
+              }
+            } */
 }
 
 .header .menu .menu-ul li a .crear-gifo:hover {
@@ -127,8 +161,57 @@
   background-image: url(../images/CTA-crear-gifo-active.svg);
 }
 
+.dark {
+  background-color: #37383C;
+}
+
+.dark .header {
+  background-color: #37383C;
+  -webkit-box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+          box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+  border-top: #000000 solid 5px;
+}
+
+.dark .header .menu .logo {
+  background-image: url(../images/Logo-modo-noc.svg);
+}
+
+.dark .header .menu .burger {
+  background-color: #37383C;
+}
+
+.dark .header .menu .burger div {
+  background-image: url(../images/burger-modo-noct.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dark .header .menu .burger-close {
+  background-color: #37383C;
+}
+
+.dark .header .menu .burger-close div {
+  background-image: url(../images/close-modo-noct.svg);
+}
+
+.dark .header .menu .menu-ul li a {
+  color: #FFFFFF;
+}
+
+.dark .header .menu .menu-ul li a .crear-gifo {
+  background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
+}
+
+.dark .header .menu .menu-ul li a .crear-gifo:hover {
+  background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
+}
+
+.dark .header .menu .menu-ul li a .crear-gifo:active {
+  background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
+}
+
 main {
-  margin-top: 95px;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -148,6 +231,9 @@ main {
     background-size: contain;
     width: 48.8px;
     height: 48.8px;
+    /* &.dark {
+          background-image: url(../images/logo-mobile-modo-noct.svg);
+        } */
   }
   .header .menu .burger {
     display: block;
@@ -176,6 +262,9 @@ main {
     top: 95px;
     overflow-y: auto;
     padding-top: 32px;
+    /* &.dark {
+          background-color: $bg-night-mode-secondaryr;
+        } */
   }
   .header .menu .menu-ul li {
     line-height: 30px;
@@ -204,6 +293,9 @@ main {
   }
   .header .menu .menu-ul_visible {
     left: 0;
+  }
+  .dark .header .menu .menu-ul {
+    background-color: #222326;
   }
 }
 
@@ -335,7 +427,6 @@ main {
 
 .crear-gifo-cont .conteiner .cuadrado .centro .video {
   margin: auto;
-  border: blue solid 1px;
   width: 488px;
   height: 310px;
 }
@@ -351,11 +442,13 @@ main {
 }
 
 .crear-gifo-cont .conteiner .cuadrado .esquinas-inf .esq-izq-inf {
-  rotate: 180deg;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .crear-gifo-cont .conteiner .cuadrado .esquinas-inf .esq-der-inf {
-  rotate: 90deg;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .crear-gifo-cont .conteiner .operadores-crear-gifo {
@@ -475,6 +568,66 @@ main {
   margin-bottom: 76px;
 }
 
+.dark .conteiner {
+  /*  .operador-img{
+      background-image: url(../images/pelicula-modo-noc.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    } */
+}
+
+.dark .conteiner .cuadrado {
+  border: 1px solid #FFFFFF;
+}
+
+.dark .conteiner .cuadrado .esquina {
+  border-top: solid 1px #FFFFFF;
+  border-right: solid 1px #FFFFFF;
+}
+
+.dark .conteiner .cuadrado .centro .title {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .cuadrado .centro .paragraph {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo {
+  border-bottom: solid 6.9px #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso {
+  border: solid 1px #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso .h5 {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso_active {
+  border: solid 1px #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso_active .h5_active {
+  color: #000000;
+}
+
+.dark .conteiner .operadores-crear-gifo .cont-tiempo .tiempo {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .btn-comenzar {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.dark .conteiner .btn-comenzar:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -546,6 +699,38 @@ footer .redes-sociales .instagram {
 }
 
 footer .redes-sociales .instagram:hover {
+  background-image: url(../images/icon_instagram-hover.svg);
+}
+
+.dark footer {
+  border-bottom: #000000 solid 5px;
+}
+
+.dark footer h4 {
+  color: #FFFFFF;
+}
+
+.dark footer .redes-sociales .facebook {
+  background-image: url(../images/icon_facebook_noc.svg);
+}
+
+.dark footer .redes-sociales .facebook:hover {
+  background-image: url(../images/icon_facebook_hover.svg);
+}
+
+.dark footer .redes-sociales .twitter {
+  background-image: url(../images/icon_twitter_noc.svg);
+}
+
+.dark footer .redes-sociales .twitter:hover {
+  background-image: url(../images/icon-twitter-hover.svg);
+}
+
+.dark footer .redes-sociales .instagram {
+  background-image: url(../images/icon_instagram_noc.svg);
+}
+
+.dark footer .redes-sociales .instagram:hover {
   background-image: url(../images/icon_instagram-hover.svg);
 }
 

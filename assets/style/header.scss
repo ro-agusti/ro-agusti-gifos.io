@@ -6,22 +6,34 @@
   box-sizing: content-box;
   list-style: none;
 }
-/* body {
-  padding-top: 95px;
-} */
-.header {
+body {
+  transition: 0.3s ease all;
+  /* .dark {
+    background-color: $bg-night-mode;
+    &.header{
+      background-color: $bg-night-mode;
+    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+    border-top: $color-black solid 5px;
+    }
+  } */
+}
 
-  background: rgba(255, 255, 255, 0.5);
+.header {
+  //background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-  
   z-index: 5;
   border-top: $primary-color solid 5px;
   background-color: $bg-blanco;
-  //height: 95px;
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
+
+  /* &.dark {
+    background-color: $bg-night-mode;
+    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+    border-top: $color-black solid 5px;
+  } */
   .menu {
     height: 95px;
     display: flex;
@@ -36,6 +48,9 @@
       width: 70px;
       height: 60px;
       cursor: pointer;
+      /* &.dark {
+        background-image: url(../images/Logo-modo-noc.svg);
+      } */
     }
     .burger {
       display: none;
@@ -44,8 +59,10 @@
         width: 14px;
         height: 14px;
         background-image: url(../images/burger.svg);
-        /*  &:active {
-          background-image: url(../images/close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* &.dark {
+          background-image: url(../images/burger-modo-noct.svg);
         } */
       }
     }
@@ -56,6 +73,10 @@
         width: 14px;
         height: 14px;
         background-image: url(../images/close.svg);
+        //-------------------------------------------------------
+        /* .dark {
+          background-image: url(../images/close-modo-noct.svg);
+        } */
       }
     }
     .menu-ul {
@@ -73,7 +94,9 @@
           color: $primary-color;
           display: block;
           text-transform: uppercase;
-
+          /*  &.dark {
+            color: $bg-blanco;
+          } */
           &:hover {
             text-decoration: underline 2px;
             text-decoration-color: $secondary-color;
@@ -87,6 +110,15 @@
             width: 54px;
             height: 54px;
             background-image: url(../images/button-crear-gifo.svg);
+            /* &.dark {
+              background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
+              &:hover {
+                background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
+              }
+              &:active {
+                background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
+              }
+            } */
             &:hover {
               background-image: url(../images/CTA-crear-gifo-hover.svg);
             }
@@ -99,8 +131,52 @@
     }
   }
 }
+.dark {
+  background-color: $bg-night-mode;
+  .header {
+    background-color: $bg-night-mode;
+    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
+    border-top: $color-black solid 5px;
+    .menu {
+      .logo {
+        background-image: url(../images/Logo-modo-noc.svg);
+      }
+      .burger {
+        background-color: $bg-night-mode;
+        div {
+          background-image: url(../images/burger-modo-noct.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      .burger-close{
+        background-color: $bg-night-mode;
+        div{
+          background-image: url(../images/close-modo-noct.svg);
+        }
+      }
+      .menu-ul{
+        //background-color:$bg-night-mode-secondary;
+        li{
+          a{
+            color: $bg-blanco;
+            .crear-gifo{
+              background-image: url(../images/CTA-crear-gifo-modo-noc.svg);
+              &:hover {
+                background-image: url(../images/CTA-crear-gifo-hover-modo-noc.svg);
+              }
+              &:active {
+                background-image: url(../images/CTA-crear-gifo-active-modo-noc.svg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 main {
-  margin-top: 95px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -113,6 +189,9 @@ main {
         background-size: contain;
         width: 48.8px;
         height: 48.8px;
+        /* &.dark {
+          background-image: url(../images/logo-mobile-modo-noct.svg);
+        } */
       }
       .burger {
         display: block;
@@ -139,6 +218,10 @@ main {
         top: 95px;
         overflow-y: auto;
         padding-top: 32px;
+        //--------------
+        /* &.dark {
+          background-color: $bg-night-mode-secondaryr;
+        } */
         li {
           line-height: 30px;
           a {
@@ -168,6 +251,15 @@ main {
       }
       .menu-ul_visible {
         left: 0;
+      }
+    }
+  }
+  .dark {
+    .header {
+      .menu {
+        .menu-ul{
+          background-color:$bg-night-mode-secondary;
+        }
       }
     }
   }

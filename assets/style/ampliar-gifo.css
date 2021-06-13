@@ -112,6 +112,22 @@
   background-image: url(../images/icon-download-hover.svg);
 }
 
+.dark .ampliar_gifo {
+  background-color: rgba(34, 35, 38, 0.9);
+}
+
+.dark .ampliar_gifo .close {
+  background-image: url(../images/close-modo-noct.svg);
+}
+
+.dark .ampliar_gifo .cont-aciones .text .user {
+  color: #FFFFFF;
+}
+
+.dark .ampliar_gifo .cont-aciones .text .titleGifo {
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 780px) {
   .ampliar_gifo {
     padding-top: 66.4px;
@@ -174,6 +190,23 @@
   .ampliar_gifo .cont-aciones .descargar {
     width: 36px;
     height: 36px;
+  }
+  .dark .ampliar_gifo .img-cont .left-arrow {
+    background-image: url(../images/button-slider-left-md-noct.svg);
+    background-repeat: no-repeat;
+  }
+  .dark .ampliar_gifo .img-cont .left-arrow:hover {
+    background-image: url(../images/button-slider-left-hover.svg);
+  }
+  .dark .ampliar_gifo .img-cont .right-arrow {
+    background-image: url(../images/button-slider-right-md-noct.svg);
+    background-repeat: no-repeat;
+  }
+  .dark .ampliar_gifo .img-cont .right-arrow:hover {
+    background-image: url(../images/Button-Slider-right-hover.svg);
+  }
+  .dark .ampliar_gifo .cont-aciones .corazon-violeta {
+    border: 1px solid #FFFFFF;
   }
 }
 /*# sourceMappingURL=ampliar-gifo.css.map */

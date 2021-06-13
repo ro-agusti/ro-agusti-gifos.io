@@ -126,7 +126,6 @@ main {
 
 .crear-gifo-cont .conteiner .cuadrado .centro .video {
   margin: auto;
-  border: blue solid 1px;
   width: 488px;
   height: 310px;
 }
@@ -142,11 +141,13 @@ main {
 }
 
 .crear-gifo-cont .conteiner .cuadrado .esquinas-inf .esq-izq-inf {
-  rotate: 180deg;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .crear-gifo-cont .conteiner .cuadrado .esquinas-inf .esq-der-inf {
-  rotate: 90deg;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .crear-gifo-cont .conteiner .operadores-crear-gifo {
@@ -264,5 +265,65 @@ main {
   -webkit-transform: translateX(1100px);
           transform: translateX(1100px);
   margin-bottom: 76px;
+}
+
+.dark .conteiner {
+  /*  .operador-img{
+      background-image: url(../images/pelicula-modo-noc.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    } */
+}
+
+.dark .conteiner .cuadrado {
+  border: 1px solid #FFFFFF;
+}
+
+.dark .conteiner .cuadrado .esquina {
+  border-top: solid 1px #FFFFFF;
+  border-right: solid 1px #FFFFFF;
+}
+
+.dark .conteiner .cuadrado .centro .title {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .cuadrado .centro .paragraph {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo {
+  border-bottom: solid 6.9px #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso {
+  border: solid 1px #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso .h5 {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso_active {
+  border: solid 1px #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.dark .conteiner .operadores-crear-gifo .pasos .paso_active .h5_active {
+  color: #000000;
+}
+
+.dark .conteiner .operadores-crear-gifo .cont-tiempo .tiempo {
+  color: #FFFFFF;
+}
+
+.dark .conteiner .btn-comenzar {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.dark .conteiner .btn-comenzar:hover {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 /*# sourceMappingURL=crea-gifo.css.map */

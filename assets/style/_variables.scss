@@ -9,9 +9,12 @@ $secondary-font-family: 'Roboto', sans-serif;
 $bg-blanco: #FFFFFF;
 $bg-blanco-translucido: rgba(255, 255, 255, 0.9);
 $color-negro: #000000;
-$bg-night-mode: #37383C;
-$bg-night-mode-secondary: #222326;
 $primary-bg: #F3F5F8;
 $bg-menu-burger: rgba(87, 46, 229,0.9);
 $bg-hover-gifo: rgba(87, 46, 229,0.6);
 $montserrat-bold: 'Montserrat', sans-serif;
+
+//--- varoables - modo nocturno
+$bg-night-mode: #37383C;
+$bg-night-mode-secondary: #222326;
+$bg-night-mode-secondary-translucido: rgba(34, 35, 38, 0.9);
