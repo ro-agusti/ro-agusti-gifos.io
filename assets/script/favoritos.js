@@ -14,7 +14,11 @@ console.log(favoritos);
 const btnVerMasFav = document.getElementById('btn-verMas-favoritos');
 const emptyFavorite = document.getElementById('emptyFavorite');
 
-
+if(favoritos.length<12){
+    btnVerMasFav.classList.add('hidden');
+}else{
+    btnVerMasFav.classList.remove('hidden');
+}
 
 
 const getGifoForEach = (array) => {
@@ -92,7 +96,7 @@ function removeGifoFromFavoritos( arr, item ) {
 getGifoForEach(favoritos);
 
 //----- ampliar gifo -----
-/* const ampliarGifoSection = document.getElementById('ampliarGifoSection');
+const ampliarGifoSection = document.getElementById('ampliarGifoSection');
 function ampliarGifoFav(el) {
     let divContGn = document.createElement('div');
     divContGn.classList.add('ampliar_gifo');
@@ -128,7 +132,7 @@ function ampliarGifoFav(el) {
     titleGifo.textContent = el.title;
     text.appendChild(titleGifo);
     let corazon = document.createElement('div');
-    corazon.classList.add('corazon-violeta');
+    corazon.classList.add('trash');
     divContAcciones.appendChild(corazon);
     let descargar = document.createElement('div');
     descargar.classList.add('descargar');
@@ -149,7 +153,7 @@ function ampliarGifoFav(el) {
         a.dataset.downloadurl = ['application/octet-stream', a.download, a.href].join(':');
         a.click()
     })
-} */
+}
 
 //----
 /* function getFavoritos(newGifo) {

@@ -65,6 +65,17 @@
         //text-align: center;
       }
     }
+    .trash{
+      width: 20px;
+      height: 18px;
+      background-image: url(../images/icon-trash-normal.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      &:hover{
+        background-image: url(../images/icon-trash-hover.svg);
+      }
+    }
     .corazon-violeta {
       width: 20px;
       height: 18px;

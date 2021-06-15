@@ -72,9 +72,12 @@ main {
       }
 
       .centro {
+        width: 488px;
+        height: 310px;
+        position: relative;
         .title {
           //margin: auto;
-          // margin-top: 84px;
+          margin-top: 84px;
           width: 100%;
           font-family: $primary-font-family;
           font-weight: bold;
@@ -100,6 +103,88 @@ main {
           //border: blue solid 1px;
           width: 488px;
           height: 310px;
+        }
+        .img-saving-gifo {
+          margin: auto;
+          //border: blue solid 1px;
+          width: 488px;
+          height: 310px;
+          // position: relative;
+        }
+        .divBgSaving {
+          position: absolute;
+          top: 0;
+          width: 488px;
+          height: 310px;
+          background-color: $bg-hover-gifo;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          
+          .btnMyGif{
+            transform: translateY(-100px);
+            //top: 0;
+            //justify-self: start;
+            align-self: flex-end;
+            margin-top: 15px;
+            margin-right: 15px;
+            
+            display: flex;
+            .btnDownload{
+              width: 32px;
+              height: 32px;
+              background-image: url(../images/icon-download.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              margin-right: 10px;
+              &:hover{
+                background-image: url(../images/icon-download-hover.svg);
+              }
+            }
+            .btnLink{
+              width: 32px;
+              height: 32px;
+              background-image: url(../images/icon-link-normal.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              &:hover{
+                background-image: url(../images/icon-link-hover.svg);
+              }
+            }
+          }
+          .imgOK{
+            width: 22px;
+            height: 22px;
+            background-image: url(../images/check.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 10px;
+          }
+          .imgLoad {
+            width: 22px;
+            height: 22px;
+            background-image: url(../images/loader.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 10px;
+            animation: move 3s infinite linear;
+            @keyframes move {
+              from {
+                transform: translateX(0) rotate(360deg);
+              }
+              to {
+                transform: translateX(200%) rotate(0px);
+              }
+            }
+          }
+          .text {
+            color: $bg-blanco;
+            font-family: $primary-font-family;
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+          }
         }
       }
       .esquinas-inf {
@@ -176,6 +261,9 @@ main {
           line-height: 22px;
           font-weight: bold;
         }
+        .text-decoration {
+          text-decoration: underline $green-color 2px;
+        }
       }
     }
 
@@ -221,39 +309,39 @@ main {
         border-top: solid 1px $bg-blanco;
         border-right: solid 1px $bg-blanco;
       }
-      .centro{
-        .title{
+      .centro {
+        .title {
           color: $bg-blanco;
         }
-        .paragraph{
+        .paragraph {
           color: $bg-blanco;
         }
       }
     }
-    .operadores-crear-gifo{
+    .operadores-crear-gifo {
       border-bottom: solid 6.9px $bg-blanco;
-      .pasos{
-        .paso{
+      .pasos {
+        .paso {
           border: solid 1px $bg-blanco;
-          .h5{
+          .h5 {
             color: $bg-blanco;
           }
         }
-        .paso_active{
+        .paso_active {
           border: solid 1px $bg-blanco;
           background-color: $bg-blanco;
-          .h5_active{
+          .h5_active {
             color: $color-negro;
           }
         }
       }
-      .cont-tiempo{
-        .tiempo{
+      .cont-tiempo {
+        .tiempo {
           color: $bg-blanco;
         }
       }
     }
-    .btn-comenzar{
+    .btn-comenzar {
       border: 1px solid $bg-blanco;
       color: $bg-blanco;
       &:hover {
@@ -261,7 +349,7 @@ main {
         color: $color-negro;
       }
     }
-   /*  .operador-img{
+    /*  .operador-img{
       background-image: url(../images/pelicula-modo-noc.svg);
       background-repeat: no-repeat;
       background-size: contain;

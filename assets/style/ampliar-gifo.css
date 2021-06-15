@@ -87,6 +87,19 @@
   color: #000000;
 }
 
+.ampliar_gifo .cont-aciones .trash {
+  width: 20px;
+  height: 18px;
+  background-image: url(../images/icon-trash-normal.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.ampliar_gifo .cont-aciones .trash:hover {
+  background-image: url(../images/icon-trash-hover.svg);
+}
+
 .ampliar_gifo .cont-aciones .corazon-violeta {
   width: 20px;
   height: 18px;

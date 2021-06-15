@@ -54,7 +54,8 @@
                     <div class="centro" id="center-cont">
                         <h1 class="title " id="title"></h1>
                         <p class="paragraph " id="paragraph"></p>
-                        <video src="#" class="video hidden" id="video"></video>
+                        <video autoplay class="video hidden" id="video"></video>
+                        <img src="" class="hidden img-saving-gifo"  alt="Nuevo Gifo" id="recordedGifo">
                     </div>
                     <div class="esquinas-inf">
                         <div class="esq-izq-inf esquina"></div>
@@ -75,10 +76,15 @@
                         </div>
                     </div>
                     <div class="cont-tiempo">
-                        <h4 class="tiempo hidden">05:00:00:00</h4>
+                        <h4 id="time" class="tiempo hidden">00:00:00</h4>
+                        <h4 id="repeatSnapshot" class="tiempo text-decoration hidden">REPETIR CAPTURA</h4>
                     </div>
                 </div>
-                <button id="btnComenzarGifo" class="btn-comenzar"></button>
+                <button id="btnStart" class="btn-comenzar">COMENZAR</button>
+                <button id="btnRecording" class="hidden btn-comenzar">GRABAR</button>
+                <button id="btnFinish" class="hidden btn-comenzar">FINALIZAR</button>
+                <button id="btnSaveGifo" class="hidden btn-comenzar">SUBIR GIFO</button>
+                
             </div>
             <div class="camera-img-left"></div>
 
@@ -105,12 +111,12 @@
     </main>
     <script src="./assets/script/modo-nocturno.js"></script>
     <!-- RecordRTC -->
-    <!--   <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
- -->
+      <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
     <!-- opcional para compatibilidad crossbrowser -->
     <!--   <script src="https://cdn.webrtc-experiment.com/gumadapter.js"></script>
  -->
-    <script src="./assets/script/crear-gifo.js"></script>
+    <script src="./assets/script/crear-gifo2.js"></script>
 </body>
 
 </html>

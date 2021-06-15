@@ -91,6 +91,7 @@ async function seeTrendingGifos(cantGifo) {
 
     } catch (err) {
         console.log(err);
+        
     }
 }
 
