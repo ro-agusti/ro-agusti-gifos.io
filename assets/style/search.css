@@ -148,6 +148,16 @@
 }
 
 .trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 31px;
   margin-bottom: 45px;
 }
@@ -161,15 +171,27 @@
   font-weight: bold;
 }
 
-.trending p {
+.trending .trendignWords .span {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #572EE5;
   text-align: center;
   line-height: 25px;
   font-weight: medium;
-  width: 60%;
   margin: auto;
+  cursor: pointer;
+}
+
+.trending .trendignWords .span:hover {
+  color: #6B7989;
+}
+
+.trending .trendignWords .span::after {
+  content: ", ";
+}
+
+.trending .trendignWords .span:last-child::after {
+  content: "";
 }
 
 .dark .search .buscador {
@@ -202,8 +224,12 @@
   color: #FFFFFF;
 }
 
-.dark .trending p {
+.dark .trending .span {
   color: #FFFFFF;
+}
+
+.dark .trending .span:hover {
+  color: #9CAFC3;
 }
 
 @media screen and (min-width: 780px) {
@@ -358,6 +384,7 @@
     font-size: 16px;
     color: #9CAFC3;
     text-align: left;
+    cursor: pointer;
   }
   .trending h2 {
     font-size: 18px;

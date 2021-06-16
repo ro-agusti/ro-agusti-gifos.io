@@ -8,19 +8,9 @@
 }
 body {
   transition: 0.3s ease all;
-  /* .dark {
-    background-color: $bg-night-mode;
-    &.header{
-      background-color: $bg-night-mode;
-    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
-    border-top: $color-black solid 5px;
-    }
-  } */
 }
 
 .header {
-
-  //box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
   z-index: 5;
   border-top: $primary-color solid 5px;
   background-color: $bg-blanco;
@@ -202,8 +192,21 @@ main {
           .crear-gifo {
             display: none;
           }
+          &::after{
+            margin: auto;
+            width: 41px;
+            height: 1px;
+            background-color: $bg-blanco;
+            content: "";
+            display: block;
+          }
+          &:last-child{
+            &::after{
+              display: none;
+            }
+          }
         }
-        div {
+       /*  div {
           width: 41px;
 
           height: 1px;
@@ -211,7 +214,7 @@ main {
           &:last-child {
             display: none;
           }
-        }
+        } */
       }
       .menu-ul_visible {
         left: 0;

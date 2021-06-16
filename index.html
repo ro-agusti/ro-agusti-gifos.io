@@ -21,14 +21,12 @@
             <a href="./index.html">
                 <div class="logo"></div>
             </a>
-            <button class="burger" id="burger">
+            <div class="burger" id="burger">
                 <div></div>
-            </button>
+            </div>
             <ul class="menu-ul" id="menu-ul">
-                <li id="nightMode"><a id="aTheme">Modo Nocturno</a></li>
-                <div></div>
+                <li id="nightMode"><a id="aTheme">Modo Nocturno</a></li>       
                 <li id="favorite"><a href="./favoritos.html">Favoritos</a></li>
-                <div></div>
                 <li id="myGifos"><a href="./mis-gifos.html">Mis GIFOS</a></li>
                 <li id="createGifo">
                     <a href="./crea-gifo.html">
@@ -59,12 +57,11 @@
 
         <section class="trending" id="trending">
             <h2>Trending:</h2>
-            <p>Reactions, Entertainment, Sports, Stickers, Artist</p>
+            <div id="trendingWordsDiv" class="trendignWords"></div>
         </section>
         <section class="searching" id="searching">
         </section>
-        <section class="sin-resultados hidden" id="sinResultados">
-            
+        <section class="sin-resultados hidden" id="sinResultados">           
             <div class="ouch"></div>
             <h3>Intenta con otra busqueda.</h3>
         </section>
@@ -75,7 +72,6 @@
             <div class="tittle-trending-gifo">
                 <h2>Trending GIFOS</h2>
                 <p>Mira los ultimos GIFOS de nuestra comunidad.</p>
-
             </div>
             <div class="carroussel">
                 <div class="left-arrow" id="left-arrow"></div>
@@ -109,5 +105,4 @@
     <script src="./assets/script/index.js" type="module"></script>
     <script src="./assets/script/trending-gifos.js" type="module"></script>
 </body>
-
 </html>

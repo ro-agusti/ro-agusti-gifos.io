@@ -234,6 +234,9 @@
         }
         .right-arrow{
           background-image: url(../images/button-slider-right-md-noct.svg);
+          &:hover {
+            background-image: url(../images/Button-Slider-right-hover.svg);
+          }
         }
       }
     }

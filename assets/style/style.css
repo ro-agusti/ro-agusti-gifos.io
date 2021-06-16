@@ -9,14 +9,6 @@
 body {
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  /* .dark {
-    background-color: $bg-night-mode;
-    &.header{
-      background-color: $bg-night-mode;
-    box-shadow: 0 2px 4px 1px rgba(21, 22, 24, 0.55);
-    border-top: $color-black solid 5px;
-    }
-  } */
 }
 
 .header {
@@ -233,6 +225,15 @@ main {
     top: 95px;
     overflow-y: auto;
     padding-top: 32px;
+    /*  div {
+          width: 41px;
+
+          height: 1px;
+          background-color: $bg-blanco;
+          &:last-child {
+            display: none;
+          }
+        } */
   }
   .header .menu .menu-ul li {
     line-height: 30px;
@@ -251,12 +252,15 @@ main {
   .header .menu .menu-ul li .crear-gifo {
     display: none;
   }
-  .header .menu .menu-ul div {
+  .header .menu .menu-ul li::after {
+    margin: auto;
     width: 41px;
     height: 1px;
     background-color: #FFFFFF;
+    content: "";
+    display: block;
   }
-  .header .menu .menu-ul div:last-child {
+  .header .menu .menu-ul li:last-child::after {
     display: none;
   }
   .header .menu .menu-ul_visible {
@@ -475,6 +479,16 @@ main {
 }
 
 .trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 31px;
   margin-bottom: 45px;
 }
@@ -488,15 +502,27 @@ main {
   font-weight: bold;
 }
 
-.trending p {
+.trending .trendignWords .span {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #572EE5;
   text-align: center;
   line-height: 25px;
   font-weight: medium;
-  width: 60%;
   margin: auto;
+  cursor: pointer;
+}
+
+.trending .trendignWords .span:hover {
+  color: #6B7989;
+}
+
+.trending .trendignWords .span::after {
+  content: ", ";
+}
+
+.trending .trendignWords .span:last-child::after {
+  content: "";
 }
 
 .dark .search .buscador {
@@ -529,8 +555,12 @@ main {
   color: #FFFFFF;
 }
 
-.dark .trending p {
+.dark .trending .span {
   color: #FFFFFF;
+}
+
+.dark .trending .span:hover {
+  color: #9CAFC3;
 }
 
 @media screen and (min-width: 780px) {
@@ -685,6 +715,7 @@ main {
     font-size: 16px;
     color: #9CAFC3;
     text-align: left;
+    cursor: pointer;
   }
   .trending h2 {
     font-size: 18px;
@@ -1184,6 +1215,9 @@ main {
   }
   .dark .trending-gifos .carroussel .right-arrow {
     background-image: url(../images/button-slider-right-md-noct.svg);
+  }
+  .dark .trending-gifos .carroussel .right-arrow:hover {
+    background-image: url(../images/Button-Slider-right-hover.svg);
   }
 }
 

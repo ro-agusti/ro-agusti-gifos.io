@@ -238,5 +238,8 @@
   .dark .trending-gifos .carroussel .right-arrow {
     background-image: url(../images/button-slider-right-md-noct.svg);
   }
+  .dark .trending-gifos .carroussel .right-arrow:hover {
+    background-image: url(../images/Button-Slider-right-hover.svg);
+  }
 }
 /*# sourceMappingURL=trending-gifos.css.map */

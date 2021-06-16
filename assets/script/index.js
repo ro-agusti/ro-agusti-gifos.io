@@ -6,6 +6,7 @@ const magnifier1 = document.getElementById('magnifier1');
 const magnifier2 = document.getElementById('magnifier2');
 const contLi = document.getElementById('cont-li');
 const closeSuggestion = document.getElementById('closeSuggestion');
+const sinResultados = document.getElementById('sinResultados');
 
 window.addEventListener("keydown", (e) => {
     magnifier1.classList.remove('hidden');
@@ -40,7 +41,7 @@ buttonVerMas.addEventListener('click', () => {
     newSearch(search.value);
 
 })
-if (cantidad>= 30) {
+if (cantidad >= 30) {
     buttonVerMas.classList.add('hidden');
 }
 //---- funcion de sugerencias -----
@@ -66,7 +67,10 @@ async function suggestion(tag) {
             h6.textContent = suggestionX;
             li.appendChild(h6);
             contLi.appendChild(li);
-
+            li.addEventListener('click',()=>{
+                search.value = suggestionX;
+                newSearch(suggestionX);
+            })
 
         }
 
@@ -75,12 +79,24 @@ async function suggestion(tag) {
     }
 }
 
-
+const buscadorFixed = document.getElementById('buscadorFixed')
 //---- buscador superior ----
-window.addEventListener('scroll',()=>{
-    buscador.classList.toggle('buscador-fixed',window.scrollY>350);
-    //buscador.classList.toggle('buscador-con-sugerencias-fixed',window.scrollY>350);
+/* window.addEventListener('scroll', () => {
+
+    buscadorFixed.classList.remove('hidden', window.scrollY > 350);
+   
+    window.addEventListener("keydown", (e) => {
+        if (e.key == "Enter") {
+            let busqueda = search.value;
+            newSearch(busqueda);
+        }
+    });
+
 })
+window.addEventListener('scroll',()=>{
+    buscadorFixed.classList.add('hidden', window.scrollY > 350);
+
+}) */
 
 
 
@@ -116,6 +132,9 @@ async function newSearch(gifo) {
         const conteiner = document.createElement('div');
         conteiner.classList.add('conteiner');
         searching.appendChild(conteiner);
+
+        sinResultados.classList.add('hidden');
+        //buttonVerMas.classList.add('hidden');
 
         for (let i = 0; i < cantidad; i++) {
             let gifoCont = document.createElement('div');
@@ -182,7 +201,7 @@ async function newSearch(gifo) {
         }
     } catch (err) {
         console.log(err);
-        const sinResultados = document.getElementById('sinResultados');
+        
         sinResultados.classList.remove('hidden');
         buttonVerMas.classList.add('hidden');
 
@@ -278,3 +297,56 @@ function ampliarGifo(el) {
 }
 //export { ampliarGifo, getFavoritos };
 
+
+
+
+
+
+
+
+
+
+
+
+//---------------------
+
+//const trendingSugg = document.getElementById('trending');
+const textTrendingWordsDiv = document.getElementById('trendingWordsDiv');
+const arrayTrendingWords = [];
+
+
+
+const seeTrendingWords = async(string)=>{
+    const apiKey = 'SNJ9a5GbDjgSmOddC8ab03rQXLhxjPvS';
+    const url = `https://api.giphy.com/v1/trending/searches?api_key=${apiKey}`;
+   
+    try{
+        const response = await fetch(url);
+        const info = await response.json();
+        console.log(info);
+        
+        for(let i = 0; i < 5; i++){
+            let nameTrending = info.data[i] ;
+            console.log(nameTrending);
+            arrayTrendingWords.push(nameTrending);
+        }
+        renderTrending(arrayTrendingWords);
+    } catch (err){
+        console.log(err);
+    }
+}
+seeTrendingWords();
+
+console.log(search);
+const renderTrending = (array)=>{
+    array.forEach(el=>{
+        let span = document.createElement('span');
+        span.classList.add('span');
+        span.textContent= el;
+        textTrendingWordsDiv.appendChild(span);
+        span.addEventListener('click',()=>{
+            search.value=el;
+            newSearch(el);
+        })
+    })
+}
