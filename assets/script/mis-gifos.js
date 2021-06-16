@@ -27,7 +27,7 @@ function getGifoForEach(array) {
         array.forEach(async (el) => {
 
             const apiKey = 'SNJ9a5GbDjgSmOddC8ab03rQXLhxjPvS';
-            const url = `http://api.giphy.com/v1/gifs?api_key=${apiKey}&gif_id=${el.id}`;
+            const url = `https://api.giphy.com/v1/gifs?api_key=${apiKey}&gif_id=${el.id}`;
             //console.log(url);
             
             try {
