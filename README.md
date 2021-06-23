@@ -18,7 +18,7 @@ El objetivo de este trabajo es implementar las herramientas aprendidas en el SPR
 
 - HTML
 - CSS
-- Scss
+- Sass
 - JavaScript
 
 #### Recursos
